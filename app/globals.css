@@ -2,26 +2,222 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 207 37% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 207 37% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 207 37% 8%;
+
+    --primary: 207 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 270 86% 53%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 270 86% 53%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 270 86% 53%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --ring: 207 100% 50%;
+    --radius: 0.5rem;
+
+    --success: 148 84% 53%;
+    --success-foreground: 210 40% 98%;
+
+    --error: 349 84% 57%;
+    --error-foreground: 210 40% 98%;
+
+    --alice-white: 206 41% 97%;
+    --white: 0 0% 98%;
+    --blue-black: 207 37% 8%;
+    --black: 207 2% 6%;
+  }
+
+  .dark {
+    --background: 207 37% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 207 37% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 207 37% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 207 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 270 86% 53%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 270 86% 53%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 270 86% 53%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 148 84% 53%;
+    --success-foreground: 210 40% 98%;
+
+    --error: 349 84% 57%;
+    --error-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+
+    --alice-white: 206 41% 97%;
+    --white: 0 0% 98%;
+    --blue-black: 207 37% 8%;
+    --black: 207 2% 6%;
   }
 }
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.active {
+  color: white;
+  font-weight: 600;
+}
+
+#home {
+  background-image: url(../public/assets/home/hero-bg.png);
+}
+
+.story-gradient {
+  background: linear-gradient(180deg, rgba(243, 247, 250, 0.8) 0%, rgba(243, 247, 250, 0) 163.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.faded-corners {
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 20%,
+    transparent 100%
+  );
+}
+
+.faded-edgesv2 {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 2%,
+    rgba(0, 0, 0, 1) 16%,
+    rgba(0, 0, 0, 1) 90%,
+    transparent 100%
+  );
+}
+
+.faded-camera {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 70%,
+    transparent 100%
+  );
+}
+
+.security-gradient {
+  background: linear-gradient(180deg, #f3f7fa 0%, rgba(243, 247, 250, 0) 163.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-ticketing {
+  border-radius: 1rem;
+  border: 1px solid rgba(250, 250, 250, 0.08);
+  background: radial-gradient(
+    139.78% 132.99% at 0% 50%,
+    rgba(0, 141, 255, 0.16) 0%,
+    rgba(0, 141, 255, 0) 100%
+  );
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ffffff;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.custom-scroll-black::-webkit-scrollbar-track {
+  background-color: #171523;
+}
+
+.custom-scroll-black::-webkit-scrollbar {
+  width: 10px;
+  background-color: #171523;
+}
+
+.custom-scroll-black::-webkit-scrollbar-thumb {
+  background-color: #171523;
+  border: 2px solid #171523;
+}
+
+.bg-footer {
+  background: linear-gradient(to left, #00f0ff, #181a7e, #df1489, #ec3934, #f3802f, #f6cb28);
+}
+
+.transparent-tooltip {
+  background-color: transparent;
+  color: black; /* You might want to change the text color for visibility */
+  box-shadow: none; /* To remove the shadow if needed */
+}
+
+.mask-design {
+  border-radius: 40px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
