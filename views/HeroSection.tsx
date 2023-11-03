@@ -84,7 +84,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <button
             className="py-3 px-4 bg-[#0182eb] rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
             onClick={() =>
@@ -98,7 +98,7 @@ const HeroSection = () => {
 
           <a
             href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-            className={`py-3 px-4 rounded border duration-150 hidden xl:block hover:brightness-125 bg-blue-black/50 backdrop-blur-lg border-alice-white/5`}
+            className={`py-3 px-4 rounded border duration-150 hover:brightness-125 bg-blue-black/50 backdrop-blur-lg border-alice-white/5`}
           >
             Sign In
           </a>
