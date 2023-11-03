@@ -113,7 +113,11 @@ body {
 }
 
 .story-gradient {
-  background: linear-gradient(180deg, rgba(243, 247, 250, 0.8) 0%, rgba(243, 247, 250, 0) 163.28%);
+  background: linear-gradient(
+    180deg,
+    rgba(243, 247, 250, 0.8) 0%,
+    rgba(243, 247, 250, 0) 163.28%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -150,7 +154,11 @@ body {
 }
 
 .security-gradient {
-  background: linear-gradient(180deg, #f3f7fa 0%, rgba(243, 247, 250, 0) 163.28%);
+  background: linear-gradient(
+    180deg,
+    #f3f7fa 0%,
+    rgba(243, 247, 250, 0) 163.28%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -208,7 +216,15 @@ body {
 }
 
 .bg-footer {
-  background: linear-gradient(to left, #00f0ff, #181a7e, #df1489, #ec3934, #f3802f, #f6cb28);
+  background: linear-gradient(
+    to left,
+    #00f0ff,
+    #181a7e,
+    #df1489,
+    #ec3934,
+    #f3802f,
+    #f6cb28
+  );
 }
 
 .transparent-tooltip {
