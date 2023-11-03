@@ -21,33 +21,78 @@ const Team = () => {
         </h2>
 
         <div className="relative w-[1160px] h-[818px] hidden xl:block">
-          <FrameOne className="absolute top-0 left-0" />
-          <FrameTwo className="absolute -top-[4.7%] right-0" />
-          <FrameThree className="absolute bottom-0 left-0" />
-          <FrameFour className="absolute bottom-0 -right-[2%]" />
+          <a
+            href="https://www.linkedin.com/in/dash-manikkuwadura/"
+            target="_blank"
+          >
+            <FrameOne className="absolute top-0 left-0 hover:brightness-125 duration-150" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shoaib-aslam-aca-fmaat-13055319/"
+            target="_blank"
+          >
+            <FrameTwo className="absolute -top-[4.7%] right-0 hover:brightness-125 duration-150" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/buddhika-perera/"
+            target="_blank"
+          >
+            <FrameThree className="absolute bottom-0 left-0 hover:brightness-125 duration-150" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ashley-preen-8544661a1/"
+            target="_blank"
+          >
+            <FrameFour className="absolute bottom-0 -right-[2%] hover:brightness-125 duration-150" />
+          </a>
         </div>
 
         <div className="flex xl:hidden flex-wrap gap-8 justify-center items-center">
-          <img
-            src={"/assets/team/mobile-frame-1.png"}
-            alt={"Darshana"}
-            className="w-full max-w-[355px]"
-          />
-          <img
-            src={"/assets/team/mobile-frame-2.png"}
-            alt={"Darshana"}
-            className="w-full max-w-[355px]"
-          />
-          <img
-            src={"/assets/team/mobile-frame-3.png"}
-            alt={"Darshana"}
-            className="w-full max-w-[355px]"
-          />
-          <img
-            src={"/assets/team/mobile-frame-4.png"}
-            alt={"Darshana"}
-            className="w-full max-w-[355px]"
-          />
+          <a
+            href="https://www.linkedin.com/in/dash-manikkuwadura/"
+            target="_blank"
+          >
+            <img
+              src={"/assets/team/mobile-frame-1.png"}
+              alt={"Darshana"}
+              className="w-full max-w-[355px]"
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/shoaib-aslam-aca-fmaat-13055319/"
+            target="_blank"
+          >
+            <img
+              src={"/assets/team/mobile-frame-2.png"}
+              alt={"Shoaib"}
+              className="w-full max-w-[355px]"
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/buddhika-perera/"
+            target="_blank"
+          >
+            <img
+              src={"/assets/team/mobile-frame-3.png"}
+              alt={"Buddhika"}
+              className="w-full max-w-[355px]"
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ashley-preen-8544661a1/"
+            target="_blank"
+          >
+            <img
+              src={"/assets/team/mobile-frame-4.png"}
+              alt={"Ashley"}
+              className="w-full max-w-[355px]"
+            />
+          </a>
         </div>
       </div>
     </div>

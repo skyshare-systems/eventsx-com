@@ -10,28 +10,35 @@ const Advisors = () => {
       image: "/assets/advisors/franco.png",
       advisorName: "Franco de la Croix-Vaubois",
       title: "Communities",
+      linkUrl: "https://www.linkedin.com/in/globalvillage/",
     },
     {
       image: "/assets/advisors/david.png",
       advisorName: "David Martin",
       title: "Operations",
+      linkUrl: "https://www.linkedin.com/in/davidmartin-ethersolutions/",
     },
     {
       image: "/assets/advisors/stephanie.png",
       advisorName: "Stephanie Loeffler-Reading",
       title: "IP & Legal",
+      linkUrl:
+        "https://www.linkedin.com/in/stephanie-loeffler-reading-6b00605/",
     },
     {
       image: "/assets/advisors/munib.png",
       advisorName: "Munib Ali",
       title: "Regulation",
+      linkUrl: "https://www.linkedin.com/in/munibali2/",
     },
     {
       image: "/assets/advisors/vikrams.png",
       advisorName: "Vikram Modgil",
       title: "Artificial Intelligence",
+      linkUrl: "https://www.linkedin.com/in/voice-ai/",
     },
   ];
+
   return (
     <section id="advisors" className="flex justify-center items-center my-16">
       <div className="flex flex-col items-center gap-8 sm:gap-16">
@@ -72,6 +79,7 @@ const Advisors = () => {
                   name={advisor.advisorName}
                   imgUrl={advisor.image}
                   title={advisor.title}
+                  linkUrl={advisor.linkUrl}
                 />
               ))}
             </div>
@@ -84,6 +92,7 @@ const Advisors = () => {
                   name={advisor.advisorName}
                   imgUrl={advisor.image}
                   title={advisor.title}
+                  linkUrl={advisor.linkUrl}
                 />
               ))}
             </div>

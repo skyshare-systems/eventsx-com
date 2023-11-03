@@ -37,7 +37,7 @@ const NFTImplementation = () => {
       id="nft-implementation"
       className="py-16  md:p-16 bg-[url('/assets/nft-implementation/bottom-glow.png')] bg-contain bg-no-repeat bg-top"
     >
-      <div className="max-w-[64rem] mx-auto px-4">
+      <div className="max-w-[64rem] mx-auto px-4 xl:px-0">
         <div className="flex items-center flex-col space-y-4 max-w-[39.8rem] mx-auto">
           <h2
             className={cn(

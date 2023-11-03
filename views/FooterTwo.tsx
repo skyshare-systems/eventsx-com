@@ -46,14 +46,17 @@ const startupaccelerator = [
   {
     name: "nvidia",
     image: "/assets/footer-icons/nvidia.png",
+    linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
   {
     name: "aws",
     image: "/assets/footer-icons/aws.png",
+    linkUrl: "https://aws.amazon.com/startups",
   },
   {
     name: "virgin",
     image: "/assets/footer-icons/virginia.png",
+    linkUrl: "https://www.virginstartup.org/",
   },
 ];
 
@@ -103,17 +106,26 @@ const FooterTwo = () => {
 
             <div className="flex flex-wrap justify-center items-center">
               {startupaccelerator.map((data, index) => {
-                return <img key={index} src={data.image} alt={data.name} />;
+                return (
+                  <a href={data.linkUrl} key={index} target="_blank">
+                    <img src={data.image} alt={data.name} />;
+                  </a>
+                );
               })}
             </div>
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-3">
-            <img src="/assets/footer-icons/uk-privacy.png" alt="uk privacy" />
-            <img
-              src="/assets/footer-icons/gdpr-representation.png"
-              alt="gdpr representation"
-            />
+            <a href="https://prighter.com/q/16998098797" target="_blank">
+              <img src="/assets/footer-icons/uk-privacy.png" alt="uk privacy" />
+            </a>
+
+            <a href="https://prighter.com/q/16998098797" target="_blank">
+              <img
+                src="/assets/footer-icons/gdpr-representation.png"
+                alt="gdpr representation"
+              />
+            </a>
           </div>
         </div>
       </div>
