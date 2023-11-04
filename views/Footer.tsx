@@ -286,7 +286,7 @@ const Footer = () => {
     <div className="flex justify-center items-center">
       <div className="grid grid-cols-2 sm:grid-cols-2 gap-8 lg:grid-cols-5 xl:grid-cols-7 max-w-[90rem] grow py-[5rem] px-4 xl:px-0">
         <div className="flex flex-col gap-8">
-          <FooterCard title={"Products"} object={products} links={""} />
+          <FooterCard title={"Products"} object={products} />
           <FooterCard title={"Features"} object={features} />
         </div>
 
