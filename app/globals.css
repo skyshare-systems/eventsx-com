@@ -227,6 +227,10 @@ body {
   );
 }
 
+.bg-signin {
+  background: linear-gradient(to left, #0182eb, #9f1ad2);
+}
+
 .transparent-tooltip {
   background-color: transparent;
   color: black; /* You might want to change the text color for visibility */

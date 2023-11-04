@@ -100,17 +100,20 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
             >
               Request a demo <Icons.arrow width={17} height={17} />
             </button>
-
-            <a
-              href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-              className={`py-3 px-4 rounded border duration-150  hover:brightness-125 ${
-                scrolling
-                  ? "bg-alice-white/5 border-transparent"
-                  : "bg-blue-black/50 backdrop-blur-lg border-alice-white/5"
-              }`}
-            >
-              Sign In
-            </a>
+            <div className="relative">
+              <a
+                href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
+                className={`py-3 px-4 rounded border duration-150 hover:brightness-125 border-alice-white/5 bg-blue-black backdrop-blur-lg`}
+              >
+                Sign In
+              </a>
+              <a
+                href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
+                className={`py-3 px-6 text-transparent rounded-full border duration-150 hover:brightness-125 bg-gradient-to-t from-[#0182eb] via-[#34cc71] to-[#9f1ad2] blur-md absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-[1]`}
+              >
+                Sign In
+              </a>
+            </div>
           </div>
 
           <button
@@ -163,7 +166,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
           </button>
           <a
             href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-            className="py-3 px-4  md:max-w-[224px] rounded border duration-150 text-center bg-alice-white/5 border-transparent"
+            className={`py-3 px-4 rounded border duration-150 hover:brightness-125 bg-gradient-to-r from-[#0182eb] to-[#9f1ad2]  backdrop-blur-lg`}
           >
             Sign In
           </a>
