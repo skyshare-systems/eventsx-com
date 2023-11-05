@@ -282,3 +282,24 @@ body {
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
+
+.wrapper {
+  border: 3px solid blue;
+}
+
+.containers {
+  background-color: pink;
+}
+
+.barCompleted {
+  background-color: lightblue;
+  width: 80%;
+}
+
+.label {
+  font-size: 10px;
+  filter: blur(16px);
+  color: green;
+  background-color: #35b0f6;
+  right: 0;
+}

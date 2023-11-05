@@ -1,7 +1,7 @@
 // import Hero from '@/components/hero-section';
 import NFTImplementation from "@/components/nft-implementation/nft-implementation";
 import Roadmap from "@/components/roadmap-section";
-import Tokenomics from "@/components/evx-token-section";
+// import Tokenomics from "@/components/evx-token-section";
 
 import HeroSection from "@/views/HeroSection";
 import SecuritySection from "@/views/SecuritySection";
@@ -14,12 +14,14 @@ import FooterTwo from "@/views/FooterTwo";
 import FooterThree from "@/views/FooterThree";
 import Team from "@/views/Team";
 import UseCase from "@/views/UseCase";
+import Tokenomics from "@/views/Tokenomics";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <NFTImplementation />
+      {/* <Tokenomics /> */}
       <Tokenomics />
       <UseCase />
       <SecuritySection />
