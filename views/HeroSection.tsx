@@ -104,7 +104,7 @@ const HeroSection = () => {
             </a>
             <a
               href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-              className={`py-3 px-6 text-transparent rounded-full border duration-150 hover:brightness-125 bg-gradient-to-t from-[#0182eb] via-[#34cc71] to-[#9f1ad2] blur-md absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-[1]`}
+              className={`rotating text-transparent rounded-full border duration-150 hover:brightness-125 bg-gradient-to-t from-[#0182eb] via-[#34cc71] to-[#9f1ad2] blur-md -z-[1]`}
             >
               Sign In
             </a>

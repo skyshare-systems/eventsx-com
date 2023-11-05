@@ -39,10 +39,10 @@ const Roadmap = () => {
         width={500}
         src={"/assets/roadmap/x-pattern.png"}
         alt={"x-pattern"}
-        className="w-full md:max-w-[800px] absolute -top-[7%] -left-[50%] md:-left-[20%]"
+        className="w-full max-w-[300px] md:max-w-[800px] absolute -top-[7%] -left-[50%] md:-left-[20%] -z-[1] opacity-50 md:opacity-100"
       />
 
-      <div className="w-full md:max-w-[800px] absolute top-0 -left-[40%] md:-left-[15%]">
+      <div className="w-full max-w-[300px] md:max-w-[600px] absolute top-0 -left-[25%] md:-left-[15%] -z-[1] opacity-50 md:opacity-100">
         <Circle />
       </div>
       <div className="flex flex-col gap-8 grow max-w-7xl px-4 xl:px-0">
