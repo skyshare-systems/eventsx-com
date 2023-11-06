@@ -7,6 +7,7 @@ import PhaseRoadmap from "./ui/phase-roadmap";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Circle from "@/public/assets/roadmap/circle-img.svg";
+import CheckIcon from "./CheckIcon";
 
 const Roadmap = () => {
   const { ref, inView } = useInView({
@@ -65,32 +66,53 @@ const Roadmap = () => {
             <h3
               className={cn(
                 titilium.className,
-                "text-alice-white font-semibold text-[1.95313rem] leading-none sm:leading-normal"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
               )}
             >
-              Foundation and MVP Development
+              <span className="text-alice-white font-semibold">Q1 - Q4</span>
+              <span className="text-alice-white/30 font-normal">2022</span>
             </h3>
             <div className="flex flex-wrap gap-4" ref={ref}>
               <CardRoadmap
-                title={"Q1"}
-                subtitle={"2023"}
-                description={
-                  "Events raises $965K in bootstrap funding, expanding the core team to 4 members, including experienced developers and industry experts."
+                title={
+                  <>
+                    <span className="font-normal">Raised </span>
+                    <span className="font-bold">$965K -</span>
+                    <span className="font-normal">Bootstrapped </span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"Q2"}
-                subtitle={"2023"}
-                description={
-                  "Events launches its Minimum Viable Product (MVP), introducing essential features like Al Event Engine, event ticketing, and basic event management tools."
+                title={
+                  <>
+                    <span className="font-normal">Expanded Core Team to </span>
+                    <span className="font-bold">4</span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"Q3"}
-                subtitle={"2023"}
-                description={
-                  "The platform gains over 8,000 social media followers, building anticipation for the upcoming beta launch."
+                title={
+                  <>
+                    <span className="font-normal">Launched </span>
+                    <span className="font-bold">MVP Development</span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">Launched </span>
+                    <span className="font-bold">Organic Marketing</span>
+                  </>
+                }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
             </div>
           </div>
@@ -104,35 +126,61 @@ const Roadmap = () => {
             className={`${inViewPhase2 ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col gap-8 p-8 grow">
-            <h1
+            <h3
               className={cn(
                 titilium.className,
-                "text-alice-white font-semibold text-[1.95313rem] leading-none sm:leading-normal"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
               )}
             >
-              Platform Beta Launch and Growth
-            </h1>
+              <span className="text-alice-white font-semibold">Q1</span>
+              <span className="text-alice-white/30 font-normal">2023</span>
+            </h3>
             <div className="flex flex-wrap gap-4" ref={refPhase2}>
               <CardRoadmap
-                title={"Q4"}
-                subtitle={"2023"}
-                description={
-                  "Events conducts beta testing of the platform, engaging with users to gather valuable feedback for optimization and improvements."
+                title={
+                  <>
+                    <span className="font-bold">Beta Testing </span>
+
+                    <span className="font-normal">of the platform </span>
+                  </>
                 }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
               />
+
               <CardRoadmap
-                title={"Q1"}
-                subtitle={"2024"}
-                description={
-                  "The platform attracts 3,000+ active users, hosting a diverse range of events, including virtual, hybrid, and physical experiences."
+                title={
+                  <>
+                    <span className="font-normal">Got </span>
+
+                    <span className="font-bold">
+                      8000+ Social Media Followers{" "}
+                    </span>
+                  </>
                 }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
               />
+
               <CardRoadmap
-                title={"Q2"}
-                subtitle={"2024"}
-                description={
-                  "Events partners with 50+ companies, securing corporate events and forging strategic collaborations within the industry."
+                title={
+                  <>
+                    <span className="font-bold">Metaverse Deal </span>
+                    <span className="font-normal">with a large $60B </span>
+                  </>
                 }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">Manufactoring Company </span>
+                  </>
+                }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
               />
             </div>
           </div>
@@ -146,35 +194,76 @@ const Roadmap = () => {
             className={`${inViewPhase3 ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col gap-8 p-8 grow">
-            <h1
+            <h3
               className={cn(
                 titilium.className,
-                "text-alice-white font-semibold text-[1.95313rem] leading-none sm:leading-normal"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
               )}
             >
-              Expanding User Base and Features
-            </h1>
+              <span className="text-alice-white font-semibold">Q2 - Q3</span>
+              <span className="text-alice-white/30 font-normal">2023 </span>
+            </h3>
             <div className="flex flex-wrap gap-4" ref={refPhase3}>
               <CardRoadmap
-                title={"Q3"}
-                subtitle={"2024"}
-                description={
-                  "Events expands its user base to over 215,000 registered users, demonstrating rapid growth and widespread adoption of the platform."
+                title={
+                  <>
+                    <span className="font-bold">Platform </span>
+
+                    <span className="font-normal">Beta Launch </span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"Q4"}
-                subtitle={"2024"}
-                description={
-                  "The Events In-Event Product Marketplace launches, providing a unique platform for vendors and exhibitors to showcase their products directly to event attendees."
+                title={
+                  <>
+                    <span className="font-bold">Virtual Event </span>
+                    <span className="font-normal">Platform went Live </span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"Q4"}
-                subtitle={"2024"}
-                description={
-                  "NFT ticketing sees significant uptake, with 4,000 unique NFT event tickets released, including 100 Premium, 400 VIP, and genericNFTS."
+                title={
+                  <>
+                    <span className="font-normal">Acquired </span>
+                    <span className="font-bold">3000+ Users </span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">50+ Companies </span>
+                    <span className="font-normal">have used the platform </span>
+                  </>
+                }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">20+ Registered </span>
+                    <span className="font-normal">event planners </span>
+                  </>
+                }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">215k+ Subscribed </span>
+                    <span className="font-normal">potential future users </span>
+                  </>
+                }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
             </div>
           </div>
@@ -188,33 +277,87 @@ const Roadmap = () => {
             className={`${inViewPhase4 ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col gap-8 p-8 grow">
-            <h1
+            <h3
               className={cn(
                 titilium.className,
-                "text-alice-white font-semibold text-[1.95313rem] leading-none sm:leading-normal"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
               )}
             >
-              Metaverse Integration and Beyond
-            </h1>
+              <span className="text-alice-white font-semibold">Q4 </span>
+              <span className="text-alice-white/30 font-normal">2023 </span>
+            </h3>
             <div className="flex flex-wrap gap-4" ref={refPhase4}>
               <CardRoadmap
-                title={"Q1"}
-                subtitle={"2025"}
-                description={
-                  "EventsX introduces bespoke metaverses, allowing organizers to create immersive and interactive event experiences, catering to the growing demand for virtual reality gatherings."
+                title={
+                  <>
+                    <span className="font-bold">Physical Events </span>
+                    <span className="font-normal">platform release </span>
+                  </>
                 }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"Q2"}
-                subtitle={"2025"}
-                description={`Events files patent applications for its Al matchmaking algorithm, ensuring the platform's proprietary technology remains protected and unique.`}
+                title={
+                  <>
+                    <span className="font-normal">EventsX </span>
+                    <span className="font-bold">In-Event Marketplace </span>
+                    <span className="font-normal">Launch </span>
+                  </>
+                }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"Q3"}
-                subtitle={"2025"}
-                description={
-                  "Events unveils Al Event Engine development, ushering in a new era of Al-powered event planning and content generation."
+                title={
+                  <>
+                    <span className="font-bold">NFT Launch </span>
+                  </>
                 }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">NFT Ticketing </span>
+                    <span className="font-normal">Development</span>
+                  </>
+                }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">EventsX ($EVX) </span>
+                    <span className="font-normal">Crypto Token ICO</span>
+                  </>
+                }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">Metaverse </span>
+                    <span className="font-normal">Beta Release</span>
+                  </>
+                }
+                color={"#8721EE"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">AI Matchmaking algorithm </span>
+                    <span className="font-normal">
+                      for networking patent application submission
+                    </span>
+                  </>
+                }
+                color={"#8721EE"}
+                className={"max-w-[26.3rem]"}
               />
             </div>
           </div>
@@ -228,35 +371,62 @@ const Roadmap = () => {
             className={`${inViewPhase5 ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col gap-8 p-8 grow">
-            <h1
+            <h3
               className={cn(
                 titilium.className,
-                "text-alice-white font-semibold text-[1.95313rem] leading-none sm:leading-normal"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
               )}
             >
-              Scaling and Global Expansion
-            </h1>
+              <span className="text-alice-white font-semibold">Beyond </span>
+              <span className="text-alice-white/30 font-normal">2024 </span>
+            </h3>
             <div className="flex flex-wrap gap-4" ref={refPhase5}>
               <CardRoadmap
-                title={"Q4"}
-                subtitle={"2025"}
-                description={
-                  "Events reaches an impressive 600,000+ active users, equivalent to $9 million in revenue, solidifying its position as a market leader."
+                title={
+                  <>
+                    <span className="font-normal">Launch </span>
+                    <span className="font-bold">AI Event Engine</span>
+                    <span className="font-normal">development </span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"Q4"}
-                subtitle={"2025"}
-                description={
-                  "The platform secures 500+ B2B clients, strengthening its enterprise presence and catering to diverse event management needs worldwide."
+                title={
+                  <>
+                    <span className="font-normal">Launch </span>
+                    <span className="font-bold">AI Host and Event Control</span>
+                    <span className="font-normal">development </span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
               <CardRoadmap
-                title={"And Beyond..."}
-                subtitle={""}
-                description={
-                  "Events continues to innovate, enhance its offerings, and expand its global footprint, transforming the events industry into a dynamic, decentralized, and inclusive ecosystem."
+                title={
+                  <>
+                    <span className="font-normal">Patent application for </span>
+                    <span className="font-bold">AI Event Engine</span>
+                  </>
                 }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
+              />
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">Reach </span>
+                    <span className="font-bold">250k+ Active users, </span>
+                    <span className="font-normal">
+                      equivalent to $3.7M in Revenue.{" "}
+                    </span>
+                    <span className="font-normal">Land </span>
+                    <span className="font-bold">500 B2B Clients </span>
+                  </>
+                }
+                color={"#008DFF"}
+                className={"max-w-[14rem]"}
               />
             </div>
           </div>

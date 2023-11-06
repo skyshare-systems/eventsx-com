@@ -7,7 +7,7 @@ import CardNFT from "./CardNFT";
 const NFTImplementation = () => {
   const storyCards: StoryCardContent[] = [
     {
-      image: "/images/2nd-sec-img.png",
+      image: "/assets/nft-implementation/1st.png",
       title: "Unique NFT Ticketing System",
       descriptions: [
         "Harness the power of blockchain for exclusive, verifiable, and tradable event tickets.",
@@ -15,7 +15,7 @@ const NFTImplementation = () => {
       ],
     },
     {
-      image: "/images/2nd-sec-img.png",
+      image: "/assets/nft-implementation/2nd.png",
       title: "Tamper-Proof Security",
       descriptions: [
         "Eliminate counterfeit tickets and unauthorized entries.",
@@ -23,7 +23,7 @@ const NFTImplementation = () => {
       ],
     },
     {
-      image: "/images/2nd-sec-img.png",
+      image: "/assets/nft-implementation/3rd.png",
       title: "Vibrant Event Economy",
       descriptions: [
         "Engage in a dynamic secondary market for trading, selling, or exchanging NFT tickets.",

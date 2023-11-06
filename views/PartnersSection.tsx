@@ -448,7 +448,7 @@ const Partners = () => {
               "text-xl sm:text-[1.95313rem] text-alice-white/50 font-semibold"
             )}
           >
-            Agency Partners
+            Event Agency Partners
           </h1>
 
           <Marquee pauseOnHover direction="left">
