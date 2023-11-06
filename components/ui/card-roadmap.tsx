@@ -12,7 +12,7 @@ interface ICardRoadmapDetails {
 const CardRoadmap = ({ title, color, className }: ICardRoadmapDetails) => {
   return (
     <div
-      className={`p-4 gap-4 flex flex-col w-full ${className} bg-transparent rounded-2xl`}
+      className={`p-4 gap-4 flex flex-col w-full ${className} bg-transparent rounded-2xl duration-300`}
     >
       <div className="flex flex-row items-start gap-4">
         <CheckIcon color={color} className={"max-w-[20px] w-full"} />

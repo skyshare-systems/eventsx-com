@@ -66,7 +66,8 @@ const Roadmap = () => {
             <h3
               className={cn(
                 titilium.className,
-                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8 duration-300",
+                `${inView ? "opacity-100" : "opacity-0 translate-y-28"}`
               )}
             >
               <span className="text-alice-white font-semibold">Q1 - Q4</span>
@@ -82,7 +83,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-75 ${
+                  inView ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -92,7 +95,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-100 ${
+                  inView ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -102,7 +107,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-150 ${
+                  inView ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -112,7 +119,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-200 ${
+                  inView ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
             </div>
           </div>
@@ -129,7 +138,8 @@ const Roadmap = () => {
             <h3
               className={cn(
                 titilium.className,
-                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8 duration-300",
+                `${inViewPhase2 ? "opacity-100" : "opacity-0 translate-y-28"}`
               )}
             >
               <span className="text-alice-white font-semibold">Q1</span>
@@ -145,7 +155,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase2 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
 
               <CardRoadmap
@@ -159,7 +171,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-100 ${
+                  inViewPhase2 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
 
               <CardRoadmap
@@ -170,7 +184,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-100 ${
+                  inViewPhase2 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
 
               <CardRoadmap
@@ -180,7 +196,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-150 ${
+                  inViewPhase2 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
             </div>
           </div>
@@ -197,7 +215,8 @@ const Roadmap = () => {
             <h3
               className={cn(
                 titilium.className,
-                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8 duration-300",
+                `${inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"}`
               )}
             >
               <span className="text-alice-white font-semibold">Q2 - Q3</span>
@@ -213,7 +232,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -223,7 +244,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-100 ${
+                  inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -233,7 +256,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-150 ${
+                  inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -243,7 +268,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-200 ${
+                  inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -253,7 +280,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-300 ${
+                  inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -263,7 +292,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-500 ${
+                  inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
             </div>
           </div>
@@ -280,7 +311,8 @@ const Roadmap = () => {
             <h3
               className={cn(
                 titilium.className,
-                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8 duration-300",
+                `${inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"}`
               )}
             >
               <span className="text-alice-white font-semibold">Q4 </span>
@@ -295,7 +327,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-0 ${
+                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -306,7 +340,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -315,7 +351,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-100 ${
+                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -325,7 +363,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-150 ${
+                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -335,7 +375,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-200 ${
+                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -345,7 +387,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-300 ${
+                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -357,7 +401,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#8721EE"}
-                className={"max-w-[26.3rem]"}
+                className={`max-w-[26.3rem] delay-500 ${
+                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
             </div>
           </div>
@@ -374,7 +420,8 @@ const Roadmap = () => {
             <h3
               className={cn(
                 titilium.className,
-                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8"
+                "text-[1.95313rem] leading-none sm:leading-normal flex flex-wrap gap-8 duration-300",
+                `${inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"}`
               )}
             >
               <span className="text-alice-white font-semibold">Beyond </span>
@@ -390,7 +437,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -401,7 +450,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-100 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -411,7 +462,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-150 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
               <CardRoadmap
                 title={
@@ -426,7 +479,9 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008DFF"}
-                className={"max-w-[14rem]"}
+                className={`max-w-[14rem] delay-200 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
               />
             </div>
           </div>
