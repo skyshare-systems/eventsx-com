@@ -23,7 +23,7 @@ const NFTImplementation = () => {
       ],
     },
     {
-      image: "/assets/nft-implementation/3rd.png",
+      image: "/assets/nft-implementation/image-3.png",
       title: "Vibrant Event Economy",
       descriptions: [
         "Engage in a dynamic secondary market for trading, selling, or exchanging NFT tickets.",
