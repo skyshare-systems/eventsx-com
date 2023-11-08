@@ -25,6 +25,7 @@ ChartJS.register(BarElement, CategoryScale, LinearScale, tooltipChart, Legend);
 const tokenomics = [
   {
     title: "EventsX Economy",
+    color: "bg-[#008dff]",
     percentage: 45,
     description: (
       <h1
@@ -43,6 +44,7 @@ const tokenomics = [
   },
   {
     title: "EventsX Treasury Fund",
+    color: "bg-[#0486ff]",
     percentage: 20,
     description: (
       <h1
@@ -62,6 +64,7 @@ const tokenomics = [
   },
   {
     title: "Team",
+    color: "bg-[#187eff]",
     percentage: 8,
     description: (
       <h1
@@ -81,6 +84,7 @@ const tokenomics = [
   },
   {
     title: "Partnerships",
+    color: "bg-[#2a76ff]",
     percentage: 5,
     description: (
       <h1
@@ -100,6 +104,7 @@ const tokenomics = [
   },
   {
     title: "Private Sale",
+    color: "bg-[#3b6dff]",
     percentage: 5,
     description: (
       <h1
@@ -119,6 +124,7 @@ const tokenomics = [
   },
   {
     title: "Seed Sale",
+    color: "bg-[#4c63ff]",
     percentage: 4,
     description: (
       <h1
@@ -138,6 +144,7 @@ const tokenomics = [
   },
   {
     title: "Marketing",
+    color: "bg-[#5c57fe]",
     percentage: 4,
     description: (
       <h1
@@ -156,6 +163,7 @@ const tokenomics = [
   },
   {
     title: "Advisors",
+    color: "bg-[#6b4afa]",
     percentage: 3,
     description: (
       <h1
@@ -175,6 +183,7 @@ const tokenomics = [
   },
   {
     title: "IDO (Initial DEX Offering)",
+    color: "bg-[#793af4]",
     percentage: 3,
     description: (
       <h1
@@ -194,6 +203,7 @@ const tokenomics = [
   },
   {
     title: "Liquidity",
+    color: "bg-[#793af4]",
     percentage: 3,
     description: (
       <h1
@@ -417,7 +427,33 @@ const Tokenomics = () => {
               );
             })}
           </div>
-          <div className="flex justify-center items-center">
+
+          <div className="flex flex-wrap justify-center items-center gap-2 w-full">
+            {tokenomics.map((data, index) => {
+              return (
+                <div
+                  onMouseEnter={() => setPercentage(data.percentage)}
+                  className="flex flex-row gap-2 items-center text-alice-white/50 cursor-default "
+                >
+                  <div
+                    key={index}
+                    className={`w-[10px] h-[4px] ${data.color} `}
+                  />
+                  {data.title}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="flex justify-center items-center relative">
+            <h1
+              className={
+                (cn(titilium.className),
+                "text-2xl sm:text-5xl text-white absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-[50%] font-bold")
+              }
+            >
+              {percentage}%
+            </h1>
             <Image
               src={"/assets/tokenomics/chart.png"}
               alt={"chart"}
@@ -425,7 +461,7 @@ const Tokenomics = () => {
               width={500}
               className="w-full max-w-[600px] block lg:hidden"
             />
-            <div className="hidden lg:block lg:w-[50%] relative">
+            <div className="hidden lg:block lg:w-[40%] relative">
               <h1
                 className={
                   (cn(titilium.className),
