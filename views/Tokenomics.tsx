@@ -427,7 +427,14 @@ const Tokenomics = () => {
             })}
           </div>
           <div className="flex justify-center items-center">
-            <div className="w-[50%] relative">
+            <Image
+              src={"/assets/tokenomics/chart.png"}
+              alt={"chart"}
+              height={500}
+              width={500}
+              className="w-full max-w-[600px]"
+            />
+            <div className="hidden lg:block lg:w-[50%] relative">
               <h1
                 className={
                   (cn(titilium.className),
