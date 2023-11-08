@@ -324,7 +324,7 @@ const Tokenomics = () => {
             Unleashing the Power of Decentralized{" "}
             <br className="hidden sm:block" /> Event Planning with{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#58B4FF] from-[43.18%] via-[#008DFF] via-[61.58%] to-[#B719EE] to-[96.65%] ">
-              EVX
+              EVEX
             </span>
           </h1>
           <p
@@ -334,7 +334,7 @@ const Tokenomics = () => {
             )}
           >
             Discover the heart of a revolutionized event economy. EventsX is
-            proud to present EVX, our <br className="hidden sm:block" /> native
+            proud to present EVEX, our <br className="hidden sm:block" /> native
             cryptocurrency, crafted to facilitate, empower, and elevate your
             event experiences.
           </p>
@@ -375,7 +375,7 @@ const Tokenomics = () => {
                   "text-base font-normal text-alice-white/70 text-left sm:text-center"
                 )}
               >
-                With EVX, indulge in the luxury of transparent transactions.
+                With EVEX, indulge in the luxury of transparent transactions.
                 Every coin has a story, and with us, it's always authentic.
               </p>
             </div>

@@ -57,7 +57,7 @@ const EvxToken = () => {
                   )}
                 >
                   Built on the Ethereum blockchain, with the speed and
-                  efficiency of the Polygon chain, EVX offers a secure gateway
+                  efficiency of the Polygon chain, Evexoffers a secure gateway
                   to the world of decentralized event planning.
                 </p>
               </div>
@@ -109,7 +109,7 @@ const EvxToken = () => {
                     )}
                   >
                     Access premium features, make easy transactions, or immerse
-                    yourself in a bustling event marketplace. EVX is your key.
+                    yourself in a bustling event marketplace. Evexis your key.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 p-2 w-full max-w-[320px]">
