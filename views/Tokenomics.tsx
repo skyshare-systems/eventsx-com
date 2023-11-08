@@ -6,6 +6,21 @@ import Image from "next/image";
 import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 import ProgressBar from "@ramonak/react-progress-bar";
+import {
+  Chart as ChartJS,
+  BarElement,
+  CategoryScale,
+  LinearScale,
+  Tooltip as tooltipChart,
+  Legend,
+} from "chart.js";
+
+import { Doughnut } from "react-chartjs-2";
+
+import { Chart, ArcElement } from "chart.js";
+Chart.register(ArcElement);
+
+ChartJS.register(BarElement, CategoryScale, LinearScale, tooltipChart, Legend);
 
 const tokenomics = [
   {
@@ -210,6 +225,79 @@ const Tokenomics = () => {
     },
   });
 
+  const data = {
+    labels: [
+      "EventsX Economy",
+      "EventsX Treasury Fund",
+      "Team",
+      "Partnerships",
+      "Private Sale",
+      "Seed Sale",
+      "Marketing",
+      "Advisors",
+      "Initial Dex Offering",
+      "Liquidity",
+    ],
+    datasets: [
+      {
+        data: [45, 20, 8, 5, 5, 4, 4, 3, 3, 3],
+        backgroundColor: [
+          "#008dff",
+          "#0486ff",
+          "#187eff",
+          "#2a76ff",
+          "#3b6dff",
+          "#4c63ff",
+          "#5c57fe",
+          "#6b4afa",
+          "#793af4",
+          "#793af4",
+        ],
+        borderColor: "#0d151c",
+        borderWidth: 10,
+        cutout: "90%",
+      },
+    ],
+  };
+
+  const options = {};
+
+  const hoverValue = {
+    id: "hoverValue",
+    afterDatasetsDraw(chart: any, args: any, pluginOptions: any) {
+      const { ctx, data, options } = chart;
+      chart.getActiveElements().forEach((active: any) => {
+        const value = data.datasets[active.datasetIndex].data[active.index];
+        ctx.save();
+        ctx.font = `bolder 50px ${titilium.className}`;
+        ctx.fillStyle = "white";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        // ctx.fillText(value, active.element.x, active.element.y);
+        ctx.restore();
+        // console.log(value + "testing");
+        setPercentage(value);
+      });
+    },
+  };
+
+  const textCenter = {
+    id: "textCenter",
+    beforeDatasetsDraw(chart: any, args: any, pluginOptions: any) {
+      const { ctx, data } = chart;
+      ctx.save();
+      ctx.font = `bolder 50px ${titilium.className}`;
+      ctx.fillStyle = "white";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(
+        `${percentage}%`,
+        chart.getDatasetMeta(0).data[0].x,
+        chart.getDatasetMeta(0).data[0].y
+      );
+    },
+  };
+
   return (
     <div id="evx-token" className="flex justify-center items-center py-4">
       <div className="flex flex-col gap-16 px-4 sm:pt-0 sm:p-8 max-w-[1300px] relative">
@@ -268,7 +356,7 @@ const Tokenomics = () => {
                 )}
               >
                 Built on the Ethereum blockchain, with the speed and efficiency
-                of the Polygon chain, EVX offers a secure gateway to the world
+                of the Polygon chain, Evex offers a secure gateway to the world
                 of decentralized event planning.
               </p>
             </div>
@@ -314,7 +402,7 @@ const Tokenomics = () => {
                   className="transparent-tooltip"
                 >
                   <div
-                    onMouseEnter={() => setPercentage(data.percentage)}
+                    // onMouseEnter={() => setPercentage(data.percentage)}
                     className="flex flex-col gap-2 w-full max-w-[220px] p-4 min-w-[200px] rounded-2xl duration-150 hover:bg-alice-white/10"
                   >
                     <h1
@@ -338,7 +426,20 @@ const Tokenomics = () => {
               );
             })}
           </div>
-
+          <div className="flex justify-center items-center">
+            <div className="w-[50%] relative">
+              <h1
+                className={
+                  (cn(titilium.className),
+                  "text-2xl sm:text-5xl text-white absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-[55%] font-bold")
+                }
+              >
+                {percentage}%
+              </h1>
+              <Doughnut data={data} className="w-full" plugins={[hoverValue]} />
+            </div>
+          </div>
+          {/* 
           <ProgressBar
             completed={percentage}
             customLabel=" d"
@@ -346,7 +447,7 @@ const Tokenomics = () => {
             bgColor="linear-gradient(to left, #30B4FF, #18456A)"
             height="10px"
             baseBgColor="rgba(0, 141, 255, 0.16)"
-          />
+          /> */}
         </div>
       </div>
     </div>
