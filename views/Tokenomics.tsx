@@ -226,18 +226,6 @@ const Tokenomics = () => {
   });
 
   const data = {
-    labels: [
-      "EventsX Economy",
-      "EventsX Treasury Fund",
-      "Team",
-      "Partnerships",
-      "Private Sale",
-      "Seed Sale",
-      "Marketing",
-      "Advisors",
-      "Initial Dex Offering",
-      "Liquidity",
-    ],
     datasets: [
       {
         data: [45, 20, 8, 5, 5, 4, 4, 3, 3, 3],
@@ -402,8 +390,11 @@ const Tokenomics = () => {
                   className="transparent-tooltip"
                 >
                   <div
-                    // onMouseEnter={() => setPercentage(data.percentage)}
-                    className="flex flex-col gap-2 w-full max-w-[220px] p-4 min-w-[200px] rounded-2xl duration-150 hover:bg-alice-white/10"
+                    onMouseEnter={() => setPercentage(data.percentage)}
+                    className={`flex flex-col gap-2 w-full max-w-[220px] p-4 min-w-[200px] rounded-2xl duration-150 
+                    
+                        hover:bg-alice-white/10
+                    `}
                   >
                     <h1
                       className={cn(
@@ -432,13 +423,13 @@ const Tokenomics = () => {
               alt={"chart"}
               height={500}
               width={500}
-              className="w-full max-w-[600px]"
+              className="w-full max-w-[600px] block lg:hidden"
             />
             <div className="hidden lg:block lg:w-[50%] relative">
               <h1
                 className={
                   (cn(titilium.className),
-                  "text-2xl sm:text-5xl text-white absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-[55%] font-bold")
+                  "text-2xl sm:text-5xl text-white absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-[50%] font-bold")
                 }
               >
                 {percentage}%
