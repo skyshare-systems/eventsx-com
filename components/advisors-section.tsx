@@ -72,7 +72,7 @@ const Advisors = () => {
             pauseOnHover
             className="w-full my-4 overflow-y-hidden"
           >
-            <div className=" justify-center items-center gap-4 last:mr-4 hidden sm:flex">
+            <div className=" justify-center items-center gap-[3rem] last:mr-[3rem] hidden sm:flex">
               {advisorCards.map((advisor, index) => (
                 <AdvisorCard
                   key={index}

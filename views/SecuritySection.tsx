@@ -26,8 +26,8 @@ const marqueeComponent = [
             "text-[0.64rem] text-alice-white/70 font-normal"
           )}
         >
-          GDPR compliance? Check. We don&rsquo;t just abide by data laws—we
-          respect them.
+          Leveraging cutting-edge encryption tech, we make sure your data stays
+          with you—and only you.
         </h1>
         <h1
           className={cn(
@@ -35,8 +35,8 @@ const marqueeComponent = [
             "text-[0.64rem] text-alice-white/70 font-normal"
           )}
         >
-          Our transparent policies ensure you&rsquo;re always in the loop about
-          your data&rsquo;s journey.
+          Our eagle-eyed tech squad frequently conducts audits, making sure any
+          security gaps are promptly sealed.
         </h1>
       </div>
     ),
@@ -53,8 +53,8 @@ const marqueeComponent = [
           )}
         >
           Powering our platform are trusty smart contracts. And to ensure
-          they&rsquo;re iron-clad, we&rsquo;ve partnered with top-tier auditing
-          firms for meticulous code evaluations.
+          they're iron-clad, we've partnered with top-tier auditing firms for
+          meticulous code evaluations.
         </h1>
       </div>
     ),
@@ -96,9 +96,11 @@ const marqueeComponent = [
             "text-[0.64rem] text-alice-white/70 font-normal"
           )}
         >
-          GDPR compliance? Check. We don&rsquo;t just abide by data laws—we
-          respect them. Our transparent policies ensure you&rsquo;re always in
-          the loop about your data&rsquo;s journey.
+          GDPR compliance? Check. We don't just abide by data laws—we respect
+          them.
+          <br />
+          Our transparent policies ensure you're always in the loop about your
+          data's journey.
         </h1>
       </div>
     ),
@@ -114,10 +116,11 @@ const marqueeComponent = [
             "text-[0.64rem] text-alice-white/70 font-normal"
           )}
         >
-          We&rsquo;ve got a game plan. Our risk radar is always on, prepped to
-          identify and tackle potential threats. And in the face of unforeseen
-          events? Our well-oiled operational machinery ensures things run
-          smoothly.
+          We've got a game plan. Our risk radar is always on, prepped to
+          identify and tackle potential threats.
+          <br />
+          And in the face of unforeseen events? Our well-oiled operational
+          machinery ensures things run smoothly.
         </h1>
       </div>
     ),
@@ -133,9 +136,8 @@ const marqueeComponent = [
             "text-[0.64rem] text-alice-white/70 font-normal"
           )}
         >
-          We believe in the power of community. And we&rsquo;re all ears for any
-          security concerns you might spot. Together, we&rsquo;ll keep threats
-          at bay.
+          We believe in the power of community. And we're all ears for any
+          security concerns you might spot. Together, we'll keep threats at bay.
         </h1>
       </div>
     ),
@@ -151,9 +153,9 @@ const marqueeComponent = [
             "text-[0.64rem] text-alice-white/70 font-normal"
           )}
         >
-          The digital realm is always evolving. And so are we. Our
-          finger&rsquo;s always on the pulse, ensuring our security protocols
-          outpace potential threats.
+          The digital realm is always evolving. And so are we. Our finger's
+          always on the pulse, ensuring our security protocols outpace potential
+          threats.
         </h1>
       </div>
     ),

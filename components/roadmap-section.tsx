@@ -59,7 +59,7 @@ const Roadmap = () => {
         <div className="flex flex-row grow">
           <PhaseRoadmap
             number={"01"}
-            bgcolor={`${inView ? "h-full" : "h-0"} bg-[#008DFF]`}
+            bgcolor={`${inView ? "h-full" : "h-0"} bg-[#8721EE]`}
             className={`${inView ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col gap-8 p-8 grow">
@@ -82,7 +82,7 @@ const Roadmap = () => {
                     <span className="font-normal">Bootstrapped </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-75 ${
                   inView ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -94,7 +94,7 @@ const Roadmap = () => {
                     <span className="font-bold">4</span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-100 ${
                   inView ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -106,7 +106,7 @@ const Roadmap = () => {
                     <span className="font-bold">MVP Development</span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-150 ${
                   inView ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -118,7 +118,7 @@ const Roadmap = () => {
                     <span className="font-bold">Organic Marketing</span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-200 ${
                   inView ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -208,7 +208,7 @@ const Roadmap = () => {
         <div className="flex flex-row grow">
           <PhaseRoadmap
             number={"03"}
-            bgcolor={`${inViewPhase3 ? "h-full" : "h-0"} bg-[#008DFF]`}
+            bgcolor={`${inViewPhase3 ? "h-full" : "h-0"} bg-[#8721EE]`}
             className={`${inViewPhase3 ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col gap-8 p-8 grow">
@@ -231,7 +231,7 @@ const Roadmap = () => {
                     <span className="font-normal">Beta Launch </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-75 ${
                   inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -243,7 +243,7 @@ const Roadmap = () => {
                     <span className="font-normal">Platform went Live </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-100 ${
                   inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -255,7 +255,7 @@ const Roadmap = () => {
                     <span className="font-bold">3000+ Users </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-150 ${
                   inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -267,7 +267,7 @@ const Roadmap = () => {
                     <span className="font-normal">have used the platform </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-200 ${
                   inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -279,7 +279,7 @@ const Roadmap = () => {
                     <span className="font-normal">event planners </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-300 ${
                   inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -291,7 +291,7 @@ const Roadmap = () => {
                     <span className="font-normal">potential future users </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-500 ${
                   inViewPhase3 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -370,7 +370,7 @@ const Roadmap = () => {
               <CardRoadmap
                 title={
                   <>
-                    <span className="font-bold">EventsX ($EVX) </span>
+                    <span className="font-bold">EventsX ($Evex) </span>
                     <span className="font-normal">Crypto Token ICO</span>
                   </>
                 }
@@ -413,7 +413,7 @@ const Roadmap = () => {
         <div className="flex flex-row grow">
           <PhaseRoadmap
             number={"05"}
-            bgcolor={`${inViewPhase5 ? "h-full" : "h-0"} bg-[#008DFF]`}
+            bgcolor={`${inViewPhase5 ? "h-full" : "h-0"} bg-[#8721EE]`}
             className={`${inViewPhase5 ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col gap-8 p-8 grow">
@@ -436,7 +436,7 @@ const Roadmap = () => {
                     <span className="font-normal">development </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-75 ${
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -449,7 +449,7 @@ const Roadmap = () => {
                     <span className="font-normal">development </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-100 ${
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -461,7 +461,7 @@ const Roadmap = () => {
                     <span className="font-bold">AI Event Engine</span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-150 ${
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
@@ -478,7 +478,7 @@ const Roadmap = () => {
                     <span className="font-bold">500 B2B Clients </span>
                   </>
                 }
-                color={"#008DFF"}
+                color={"#8721EE"}
                 className={`max-w-[14rem] delay-200 ${
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}

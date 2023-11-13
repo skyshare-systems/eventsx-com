@@ -49,12 +49,8 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       >
         <nav className="flex items-center justify-center py-2 w-full">
           <div className="flex items-center max-w-[1280px] grow">
-            <LinkS
-              to="home"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-100}
+            <a
+              href="https://www.eventsx.com/"
               className="items-center space-x-2 md:flex mr-4"
             >
               {/*   <span className="font-bold inline-block font-nippo text-xl">
@@ -67,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                 height={24}
                 className="pointer-events-none"
               />
-            </LinkS>
+            </a>
             <ul className="hidden  xl:flex items-center gap-1 flex-wrap">
               {items.map((item) => (
                 <LinkS

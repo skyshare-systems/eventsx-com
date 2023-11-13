@@ -32,9 +32,9 @@ const EvxToken = () => {
             )}
           >
             Discover the heart of a revolutionized event economy. EventsX is
-            proud to present EVX, our <br className="hidden sm:block" /> native
-            cryptocurrency, crafted to facilitate, empower, and elevate your
-            event experiences.
+            proud to present EVEXX, our <br className="hidden sm:block" />{" "}
+            native cryptocurrency, crafted to facilitate, empower, and elevate
+            your event experiences.
           </p>
         </div>
 
