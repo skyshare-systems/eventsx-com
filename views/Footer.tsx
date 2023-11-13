@@ -240,7 +240,7 @@ const navigation = [
     offset: -50,
   },
   {
-    href: "evx-token",
+    href: "EVEX-token",
     title: "EVEX Token",
     offset: -50,
   },

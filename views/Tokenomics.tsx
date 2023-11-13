@@ -297,7 +297,7 @@ const Tokenomics = () => {
   };
 
   return (
-    <div id="evx-token" className="flex justify-center items-center py-4">
+    <div id="EVEX-token" className="flex justify-center items-center py-4">
       <div className="flex flex-col gap-16 px-4 sm:pt-0 sm:p-8 max-w-[1300px] relative">
         <Image
           src={"/assets/tokenomics/bg-glow.png"}
@@ -354,7 +354,7 @@ const Tokenomics = () => {
                 )}
               >
                 Built on the Ethereum blockchain, with the speed and efficiency
-                of the Polygon chain, Evex offers a secure gateway to the world
+                of the Polygon chain, EVEX offers a secure gateway to the world
                 of decentralized event planning.
               </p>
             </div>

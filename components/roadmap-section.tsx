@@ -370,7 +370,7 @@ const Roadmap = () => {
               <CardRoadmap
                 title={
                   <>
-                    <span className="font-bold">EventsX ($Evex) </span>
+                    <span className="font-bold">EventsX ($EVEX) </span>
                     <span className="font-normal">Crypto Token ICO</span>
                   </>
                 }

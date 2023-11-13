@@ -1,7 +1,7 @@
 // import Hero from '@/components/hero-section';
 import NFTImplementation from "@/components/nft-implementation/nft-implementation";
 import Roadmap from "@/components/roadmap-section";
-// import Tokenomics from "@/components/evx-token-section";
+// import Tokenomics from "@/components/EVEX-token-section";
 
 import HeroSection from "@/views/HeroSection";
 import SecuritySection from "@/views/SecuritySection";

@@ -26,7 +26,7 @@ const UseCase = () => {
       icon: "usecaseItem1",
       title: "Event Economy",
       className: "event-ticketing",
-      description: `Transact with our native cryptocurrency, Evex. Whether you're buying tickets, event merchandise, or availing services, immerse in an economy that keeps the event community buzzing.`,
+      description: `Transact with our native cryptocurrency, EVEX. Whether you're buying tickets, event merchandise, or availing services, immerse in an economy that keeps the event community buzzing.`,
     },
     {
       icon: "usecaseItem1",

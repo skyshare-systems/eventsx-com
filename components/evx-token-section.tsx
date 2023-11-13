@@ -7,7 +7,7 @@ import { titilium } from "@/public/fonts";
 const EvxToken = () => {
   return (
     <section
-      id="evx-token"
+      id="EVEX-token"
       className="flex justify-center items-center relative my-16  "
     >
       <div className="absolute top-0 left-0 rounded-full bg-primary blur-[160px] opacity-[0.32] h-full w-full max-w-[747px] max-h-[747px]" />
@@ -22,7 +22,7 @@ const EvxToken = () => {
             Unleashing the Power of Decentralized{" "}
             <br className="hidden sm:block" /> Event Planning with{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#58B4FF] from-[43.18%] via-[#008DFF] via-[61.58%] to-[#B719EE] to-[96.65%]">
-              EVX
+              EVEX
             </span>
           </h1>
           <p
@@ -76,7 +76,7 @@ const EvxToken = () => {
                     "text-alice-white/70 text-base font-normal"
                   )}
                 >
-                  With EVX, indulge in the luxury of transparent transactions.
+                  With EVEX, indulge in the luxury of transparent transactions.
                   Every coin has a story, and with us, it&lsquo;s always
                   authentic.{" "}
                 </p>
