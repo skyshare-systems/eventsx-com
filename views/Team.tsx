@@ -11,7 +11,7 @@ import Image from "next/image";
 const Team = () => {
   return (
     <div id="team" className="flex justify-center items-center py-[5rem]">
-      <div className="flex flex-col justify-center items-center grow max-w-[80rem] px-4 lg:px-0">
+      <div className="flex flex-col justify-center items-center grow max-w-[80rem] px-4 lg:px-0 gap-8">
         <h2
           className={cn(
             titilium.className,

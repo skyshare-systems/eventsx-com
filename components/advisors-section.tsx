@@ -42,7 +42,7 @@ const Advisors = () => {
   return (
     <section id="advisors" className="flex justify-center items-center my-16">
       <div className="flex flex-col items-center gap-8 sm:gap-16">
-        <div className="flex flex-col gap-2 sm:items-center justify-center w-full max-w-[39.125rem] px-4 xl:px-0">
+        <div className="flex flex-col gap-8 sm:items-center justify-center w-full max-w-[39.125rem] px-4 xl:px-0">
           <h2
             className={cn(
               titilium.className,
