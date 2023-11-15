@@ -1,29 +1,28 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { titilium } from "@/public/fonts";
 import Image from "next/image";
 import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
-import ProgressBar from "@ramonak/react-progress-bar";
-import {
-  Chart as ChartJS,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-  Tooltip as tooltipChart,
-  Legend,
-} from "chart.js";
+// import {
+//   Chart as ChartJS,
+//   BarElement,
+//   CategoryScale,
+//   LinearScale,
+//   Tooltip as tooltipChart,
+//   Legend,
+// } from "chart.js";
 
-import { Doughnut } from "react-chartjs-2";
+// import { Chart, ArcElement } from "chart.js";
+// Chart.register(ArcElement);
 
-import { Chart, ArcElement } from "chart.js";
-Chart.register(ArcElement);
-
-ChartJS.register(BarElement, CategoryScale, LinearScale, tooltipChart, Legend);
+// ChartJS.register(BarElement, CategoryScale, LinearScale, tooltipChart, Legend);
+import TokenomicsChart from "@/public/assets/tokenomics/tokenomics.svg";
 
 const tokenomics = [
   {
+    idanimate: "tokenomics_svg__economy",
     title: "EventsX Economy",
     color: "bg-[#008dff]",
     percentage: 45,
@@ -31,7 +30,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -43,6 +42,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__treasury-fund",
     title: "EventsX Treasury Fund",
     color: "bg-[#0486ff]",
     percentage: 20,
@@ -50,7 +50,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -63,6 +63,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__team",
     title: "Team",
     color: "bg-[#187eff]",
     percentage: 8,
@@ -70,7 +71,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -83,6 +84,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__parnerships",
     title: "Partnerships",
     color: "bg-[#2a76ff]",
     percentage: 5,
@@ -90,7 +92,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -103,14 +105,15 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__private-sale",
     title: "Private Sale",
     color: "bg-[#3b6dff]",
-    percentage: 5,
+    percentage: 8,
     description: (
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -123,6 +126,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__seed-sale",
     title: "Seed Sale",
     color: "bg-[#4c63ff]",
     percentage: 4,
@@ -130,7 +134,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -143,6 +147,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__marketing",
     title: "Marketing",
     color: "bg-[#5c57fe]",
     percentage: 4,
@@ -150,7 +155,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -162,6 +167,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__advisors",
     title: "Advisors",
     color: "bg-[#6b4afa]",
     percentage: 3,
@@ -169,7 +175,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -182,6 +188,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__ido",
     title: "IDO (Initial DEX Offering)",
     color: "bg-[#793af4]",
     percentage: 3,
@@ -189,7 +196,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -202,6 +209,7 @@ const tokenomics = [
     ),
   },
   {
+    idanimate: "tokenomics_svg__liquidity",
     title: "Liquidity",
     color: "bg-[#793af4]",
     percentage: 3,
@@ -209,7 +217,7 @@ const tokenomics = [
       <h1
         className={cn(
           titilium.className,
-          "p-2 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
+          "p-4 rounded-lg max-w-[409px] w-full bg-alice-white/5 backdrop-blur",
           "text-base font-normal text-alice-white/70"
         )}
       >
@@ -224,6 +232,9 @@ const tokenomics = [
 
 const Tokenomics = () => {
   const [percentage, setPercentage] = useState<number>(45);
+  const [description, setDescription] = useState<any>(
+    "The EventsX Economy, with the largest allocation of 45%, forms the coreof the platform. This substantial portion fuels the platform's internal economic system, facilitating transactions, incentivizing user engagement, and nurturing a vibrant event ecosystem within EventsX."
+  );
 
   const CustomWidthTooltip = styled(({ className, ...props }: TooltipProps) => (
     <Tooltip {...props} classes={{ popper: className }} />
@@ -235,66 +246,15 @@ const Tokenomics = () => {
     },
   });
 
-  const data = {
-    datasets: [
-      {
-        data: [45, 20, 8, 5, 5, 4, 4, 3, 3, 3],
-        backgroundColor: [
-          "#008dff",
-          "#0486ff",
-          "#187eff",
-          "#2a76ff",
-          "#3b6dff",
-          "#4c63ff",
-          "#5c57fe",
-          "#6b4afa",
-          "#793af4",
-          "#793af4",
-        ],
-        borderColor: "#0d151c",
-        borderWidth: 10,
-        cutout: "90%",
-      },
-    ],
-  };
+  tokenomics.map(({ idanimate, description }) => {
+    useEffect(() => {
+      const id = document.getElementById(idanimate);
 
-  const options = {};
-
-  const hoverValue = {
-    id: "hoverValue",
-    afterDatasetsDraw(chart: any, args: any, pluginOptions: any) {
-      const { ctx, data, options } = chart;
-      chart.getActiveElements().forEach((active: any) => {
-        const value = data.datasets[active.datasetIndex].data[active.index];
-        ctx.save();
-        ctx.font = `bolder 50px ${titilium.className}`;
-        ctx.fillStyle = "white";
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        // ctx.fillText(value, active.element.x, active.element.y);
-        ctx.restore();
-        // console.log(value + "testing");
-        setPercentage(value);
+      id?.addEventListener("mouseover", () => {
+        setDescription(description);
       });
-    },
-  };
-
-  const textCenter = {
-    id: "textCenter",
-    beforeDatasetsDraw(chart: any, args: any, pluginOptions: any) {
-      const { ctx, data } = chart;
-      ctx.save();
-      ctx.font = `bolder 50px ${titilium.className}`;
-      ctx.fillStyle = "white";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(
-        `${percentage}%`,
-        chart.getDatasetMeta(0).data[0].x,
-        chart.getDatasetMeta(0).data[0].y
-      );
-    },
-  };
+    }, []);
+  });
 
   return (
     <div id="EVEX-token" className="flex justify-center items-center py-4">
@@ -400,7 +360,7 @@ const Tokenomics = () => {
                   className="transparent-tooltip"
                 >
                   <div
-                    onMouseEnter={() => setPercentage(data.percentage)}
+                    onMouseEnter={() => setDescription(data.description)}
                     className={`flex flex-col gap-2 w-full max-w-[220px] p-4 min-w-[200px] rounded-2xl duration-150 
                     
                         hover:bg-alice-white/10
@@ -432,7 +392,7 @@ const Tokenomics = () => {
             {tokenomics.map((data, index) => {
               return (
                 <div
-                  onMouseEnter={() => setPercentage(data.percentage)}
+                  onMouseEnter={() => setDescription(data.description)}
                   className="flex flex-row gap-2 items-center text-alice-white/50 cursor-default "
                 >
                   <div
@@ -445,33 +405,24 @@ const Tokenomics = () => {
             })}
           </div>
 
-          <div className="flex justify-center items-center relative">
-            <h1
-              className={
-                (cn(titilium.className),
-                "text-2xl sm:text-5xl text-white absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-[50%] font-bold")
-              }
-            >
-              {percentage}%
-            </h1>
-            <Image
-              src={"/assets/tokenomics/chart.png"}
-              alt={"chart"}
-              height={500}
-              width={500}
-              className="w-full max-w-[600px] block lg:hidden"
-            />
-            <div className="hidden lg:block lg:w-[40%] relative">
-              <h1
+          <div className="flex flex-col justify-center items-center relative gap-2">
+            <div className="flex w-full max-w-[600px] relative  justify-center items-center">
+              <TokenomicsChart className="w-full" />
+
+              <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                {description}
+              </div>
+              {/* <h1
                 className={
                   (cn(titilium.className),
                   "text-2xl sm:text-5xl text-white absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-[50%] font-bold")
                 }
               >
                 {percentage}%
-              </h1>
-              <Doughnut data={data} className="w-full" plugins={[hoverValue]} />
+              </h1> */}
             </div>
+
+            <div className="block md:hidden">{description}</div>
           </div>
           {/* 
           <ProgressBar

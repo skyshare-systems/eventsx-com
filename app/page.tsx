@@ -21,7 +21,6 @@ export default function Home() {
     <>
       <HeroSection />
       <NFTImplementation />
-      {/* <Tokenomics /> */}
       <Tokenomics />
       <UseCase />
       <SecuritySection />
