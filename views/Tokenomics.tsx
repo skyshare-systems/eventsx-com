@@ -517,7 +517,7 @@ const Tokenomics = () => {
                 {description}
               </div>
             </div>
-            <div className="flex flex-wrap items-center">
+            <div className="flex flex-wrap items-center justify-center">
               <TokenomicsCardV2 title={"FDV"} subTitle={"$10,000,000"} />
               <TokenomicsCardV2 title={"IMC"} subTitle={"$1,430,000"} />
               <TokenomicsCardV2 title={"Liquidity"} subTitle={"$300,000"} />

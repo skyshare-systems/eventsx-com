@@ -9,7 +9,7 @@ interface ITokenomicsCard {
 
 const TokenomicsCardV2 = ({ title, subTitle }: ITokenomicsCard) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center justify-center p-2">
       <h1
         className={
           (cn(titilium.className),
