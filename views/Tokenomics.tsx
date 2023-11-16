@@ -20,6 +20,7 @@ import { styled } from "@mui/material/styles";
 // ChartJS.register(BarElement, CategoryScale, LinearScale, tooltipChart, Legend);
 import TokenomicsChart from "@/public/assets/tokenomics/tokenomics.svg";
 import TokenomicsCard from "@/components/TokenomicsCard";
+import TokenomicsCardV2 from "@/components/ui/TokenomicsCardV2";
 
 const tokenomics = [
   {
@@ -512,12 +513,21 @@ const Tokenomics = () => {
           <div className="flex flex-col justify-center items-center relative gap-2">
             <div className="flex w-full max-w-[800px] relative  justify-center items-center">
               <TokenomicsChart className="w-full" />
-
               <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 {description}
               </div>
             </div>
-
+            <div className="flex flex-wrap items-center">
+              <TokenomicsCardV2 title={"FDV"} subTitle={"$10,000,000"} />
+              <TokenomicsCardV2 title={"IMC"} subTitle={"$1,430,000"} />
+              <TokenomicsCardV2 title={"Liquidity"} subTitle={"$300,000"} />
+              <TokenomicsCardV2
+                title={"IMC Without Liq"}
+                subTitle={"$1,130,000"}
+              />
+              <TokenomicsCardV2 title={"Hard Cap"} subTitle={"$1,250,000"} />
+              <TokenomicsCardV2 title={"Investor Control"} subTitle={"17%"} />
+            </div>
             <div className="block md:hidden">{description}</div>
           </div>
         </div>
