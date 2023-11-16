@@ -26,7 +26,7 @@ const tokenomics = [
     idanimate: "tokenomics_svg__economy",
     title: "EventsX Economy",
     color: "bg-[#008dff]",
-    percentage: 45,
+    percentage: 40,
     description: (
       <div className="p-4 rounded-lg max-w-[700px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
         <h1
@@ -193,7 +193,7 @@ const tokenomics = [
     idanimate: "tokenomics_svg__seed-sale",
     title: "Seed Sale",
     color: "bg-[#4c63ff]",
-    percentage: 4,
+    percentage: 5,
     description: (
       <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
         <h1
@@ -295,7 +295,7 @@ const tokenomics = [
     idanimate: "tokenomics_svg__ido",
     title: "IDO (Initial DEX Offering)",
     color: "bg-[#793af4]",
-    percentage: 3,
+    percentage: 4,
     description: (
       <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
         <h1
