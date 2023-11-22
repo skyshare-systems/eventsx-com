@@ -181,22 +181,11 @@ const Roadmap = () => {
                   <>
                     <span className="font-bold">Metaverse Deal </span>
                     <span className="font-normal">with a large $60B </span>
-                  </>
-                }
-                color={"#008bfb"}
-                className={`max-w-[14rem] delay-100 ${
-                  inViewPhase2 ? "opacity-100" : "opacity-0 translate-y-28"
-                } `}
-              />
-
-              <CardRoadmap
-                title={
-                  <>
                     <span className="font-bold">Manufactoring Company </span>
                   </>
                 }
                 color={"#008bfb"}
-                className={`max-w-[14rem] delay-150 ${
+                className={`max-w-[20rem] delay-100 ${
                   inViewPhase2 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
@@ -252,7 +241,9 @@ const Roadmap = () => {
                 title={
                   <>
                     <span className="font-normal">Acquired </span>
-                    <span className="font-bold">3000+ Users </span>
+                    <span className="font-bold">
+                      3000+ mo Monthly active users{" "}
+                    </span>
                   </>
                 }
                 color={"#008bfb"}
@@ -322,8 +313,8 @@ const Roadmap = () => {
               <CardRoadmap
                 title={
                   <>
-                    <span className="font-bold">Physical Events </span>
-                    <span className="font-normal">platform release </span>
+                    <span className="font-bold">NFT Ticketing Platform </span>
+                    <span className="font-normal">Development </span>
                   </>
                 }
                 color={"#008bfb"}
@@ -331,66 +322,35 @@ const Roadmap = () => {
                   inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
-              <CardRoadmap
-                title={
-                  <>
-                    <span className="font-normal">EventsX </span>
-                    <span className="font-bold">In-Event Marketplace </span>
-                    <span className="font-normal">Launch </span>
-                  </>
-                }
-                color={"#008bfb"}
-                className={`max-w-[14rem] delay-75 ${
-                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
-                } `}
-              />
-              <CardRoadmap
-                title={
-                  <>
-                    <span className="font-bold">NFT Launch </span>
-                  </>
-                }
-                color={"#008bfb"}
-                className={`max-w-[14rem] delay-100 ${
-                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
-                } `}
-              />
-              <CardRoadmap
-                title={
-                  <>
-                    <span className="font-bold">NFT Ticketing </span>
-                    <span className="font-normal">Development</span>
-                  </>
-                }
-                color={"#008bfb"}
-                className={`max-w-[14rem] delay-150 ${
-                  inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
-                } `}
-              />
+
               <CardRoadmap
                 title={
                   <>
                     <span className="font-bold">EventsX ($EVEX) </span>
-                    <span className="font-normal">Crypto Token ICO</span>
+                    <span className="font-normal">
+                      Crypto Token Seed Round{" "}
+                    </span>
                   </>
                 }
                 color={"#008bfb"}
-                className={`max-w-[14rem] delay-200 ${
+                className={`max-w-[14rem] delay-0 ${
                   inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
+
               <CardRoadmap
                 title={
                   <>
-                    <span className="font-bold">Metaverse </span>
+                    <span className="font-bold">B2B Metaverse </span>
                     <span className="font-normal">Beta Release</span>
                   </>
                 }
                 color={"#008bfb"}
-                className={`max-w-[14rem] delay-300 ${
+                className={`max-w-[14rem] delay-0 ${
                   inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
+
               <CardRoadmap
                 title={
                   <>
@@ -401,7 +361,7 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008bfb"}
-                className={`max-w-[26.3rem] delay-500 ${
+                className={`max-w-[14rem] delay-0 ${
                   inViewPhase4 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
@@ -431,8 +391,63 @@ const Roadmap = () => {
               <CardRoadmap
                 title={
                   <>
+                    <span className="font-bold">Physical Events </span>
+                    <span className="font-normal">platform release </span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">EventsX </span>
+                    <span className="font-bold">In-Event Marketplace </span>
                     <span className="font-normal">Launch </span>
-                    <span className="font-bold">AI Event Engine</span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">NFT Launch </span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">Launch </span>
+                    <span className="font-bold">AI Event Engine </span>
+                    <span className="font-normal">Development </span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">Launch </span>
+                    <span className="font-bold">
+                      AI Host and Event Control{" "}
+                    </span>
                     <span className="font-normal">development </span>
                   </>
                 }
@@ -441,19 +456,7 @@ const Roadmap = () => {
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
-              <CardRoadmap
-                title={
-                  <>
-                    <span className="font-normal">Launch </span>
-                    <span className="font-bold">AI Host and Event Control</span>
-                    <span className="font-normal">development </span>
-                  </>
-                }
-                color={"#008bfb"}
-                className={`max-w-[14rem] delay-100 ${
-                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
-                } `}
-              />
+
               <CardRoadmap
                 title={
                   <>
@@ -462,24 +465,87 @@ const Roadmap = () => {
                   </>
                 }
                 color={"#008bfb"}
-                className={`max-w-[14rem] delay-150 ${
+                className={`max-w-[14rem] delay-75 ${
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
+
               <CardRoadmap
                 title={
                   <>
                     <span className="font-normal">Reach </span>
-                    <span className="font-bold">250k+ Active users, </span>
+                    <span className="font-bold">250K+ Active users,</span>
                     <span className="font-normal">
-                      equivalent to $3.7M in Revenue.{" "}
+                      equivalent to $3.7M in Revenue. Land{" "}
                     </span>
-                    <span className="font-normal">Land </span>
-                    <span className="font-bold">500 B2B Clients </span>
+                    <span className="font-bold">500 B2B Clients</span>
                   </>
                 }
                 color={"#008bfb"}
-                className={`max-w-[14rem] delay-200 ${
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">
+                      EventsX ($EVEX) Crypto Token Private Round
+                    </span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">EventsX ($EVEX) IDO</span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">EventsX ($EVEX) IDO</span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">NFT Ticketing Platform </span>
+                    <span className="font-normal">Launch</span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-bold">EventsX DAO Launch </span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
