@@ -7,7 +7,6 @@ import PhaseRoadmap from "./ui/phase-roadmap";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Circle from "@/public/assets/roadmap/circle-img.svg";
-import CheckIcon from "./CheckIcon";
 
 const Roadmap = () => {
   const { ref, inView } = useInView({

@@ -47,7 +47,7 @@ const Team = () => {
               className="ml-1 group-hover:ml-3 duration-300"
             />{" "}
           </a>
-          <FrameTwo className="absolute -top-[4.7%] right-0 hover:brightness-125 duration-150" />
+          <FrameTwo className="absolute -top-[4.7%] right-0  duration-150" />
           <a
             href="https://www.linkedin.com/in/shoaib-aslam-aca-fmaat-13055319/"
             target="_blank"
@@ -72,7 +72,7 @@ const Team = () => {
               className="ml-1 group-hover:ml-3 duration-300"
             />{" "}
           </a>
-          <FrameThree className="absolute bottom-0 left-0 hover:brightness-125 duration-150" />
+          <FrameThree className="absolute bottom-0 left-0  duration-150" />
           <a
             href="https://www.linkedin.com/in/buddhika-perera/"
             target="_blank"
@@ -97,7 +97,7 @@ const Team = () => {
               className="ml-1 group-hover:ml-3 duration-300"
             />{" "}
           </a>
-          <FrameFour className="absolute bottom-0 -right-[2%] hover:brightness-125 duration-150" />
+          <FrameFour className="absolute bottom-0 -right-[2%]  duration-150" />
           <a
             href="https://www.linkedin.com/in/ashley-preen-8544661a1/"
             target="_blank"
