@@ -88,14 +88,12 @@ const HeroSection = () => {
           <button
             className="py-3 px-4 bg-[#0182eb] rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
             onClick={() =>
-              router.push(
-                "https://www.eventsx.com/request-a-demo?fbclid=IwAR1XBoBglneatmPax_FEJUBJ9Mn6nIEZ1a13ONm1qa1kH4YaNcg3a7pRgzI"
-              )
+              router.push("https://cryptodragonsden.com/projects/eventsx/")
             }
           >
-            Request a demo <Icons.arrow width={17} height={17} />
+            INVEST NOW <Icons.arrow width={17} height={17} />
           </button>
-          <div className="relative">
+          {/* <div className="relative">
             <a
               href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
               className={`py-3 px-4 rounded border duration-150 hover:brightness-125 border-alice-white/5 bg-blue-black  backdrop-blur-lg`}
@@ -108,7 +106,7 @@ const HeroSection = () => {
             >
               Sign In
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="w-full relative">
