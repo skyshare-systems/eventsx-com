@@ -303,3 +303,12 @@ body {
   background-color: #35b0f6;
   right: 0;
 }
+
+.btnInvest {
+  cursor: url(../public/assets/heart-anim.gif);
+  border-radius: 999px;
+  border: 3px solid var(--primary-100, #008dff);
+  background: var(--primary-4, rgba(0, 141, 255, 0.04));
+  box-shadow: 0px 4px 32px 0px rgba(0, 141, 255, 0.16);
+  backdrop-filter: blur(4px);
+}

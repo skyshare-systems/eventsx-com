@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import { useRouter } from "next/navigation";
 import Line from "@/public/assets/home/line.svg";
+import Image from "next/image";
 
 const cards = [
   {
@@ -66,7 +67,7 @@ const HeroSection = () => {
               Blockchain
             </span>
             <span className="text-alice-white"> and</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#58B4FF]  to-[100%] to-[#B719EE]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#58B4FF] to-[100%] to-[#B719EE]">
               {" "}
               AI
             </span>
@@ -85,14 +86,20 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <button
-            className="py-3 px-4 bg-[#0182eb] rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
-            onClick={() =>
-              router.push("https://cryptodragonsden.com/projects/eventsx/")
-            }
+          <a
+            target="_blank"
+            href="https://cryptodragonsden.com/projects/eventsx/"
+            className="py-6 px-12 btnInvest rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl sm:text-5xl relative group"
           >
-            INVEST NOW <Icons.arrow width={17} height={17} />
-          </button>
+            <Image
+              src={"/assets/heart-anim.gif"}
+              alt={"heart"}
+              height={100}
+              width={100}
+              className="absolute top-1/2 left-[60%] transform -translate-x-[60%] -translate-y-1/2 hidden group-hover:block"
+            />
+            Invest Now <Icons.arrow width={32} height={20} />
+          </a>
           {/* <div className="relative">
             <a
               href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
