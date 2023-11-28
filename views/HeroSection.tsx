@@ -96,9 +96,16 @@ const HeroSection = () => {
               alt={"heart"}
               height={100}
               width={100}
-              className="absolute top-1/2 left-[60%] transform -translate-x-[60%] -translate-y-1/2 hidden group-hover:block"
+              className="absolute top-1/2 left-[10%] transform -translate-x-[10%] -translate-y-1/2 hidden group-hover:block"
             />
-            Invest Now <Icons.arrow width={32} height={20} />
+            <Image
+              src={"/assets/heart-anim.gif"}
+              alt={"heart"}
+              height={100}
+              width={100}
+              className="absolute top-1/2 -right-[10%] transform  -translate-y-1/2 hidden group-hover:block"
+            />
+            Invest Now
           </a>
           {/* <div className="relative">
             <a
