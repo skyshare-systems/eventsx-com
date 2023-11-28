@@ -83,6 +83,14 @@ const HeroSection = () => {
             communities together, empowers event planners, and enhances the
             attendee experience.
           </p>
+          <p
+            className={cn(
+              titilium.className,
+              "text-base font-normal text-alice-white/70 text-center"
+            )}
+          >
+            Explore the opportunity to invest in the seed funding round.
+          </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
