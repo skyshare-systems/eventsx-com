@@ -92,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                 router.push("https://www.eventsx.com/request-a-demo")
               }
             >
-              Request a Demo <Icons.arrow width={17} height={17} />
+              Request Demo <Icons.arrow width={17} height={17} />
             </button>
             <div className="relative">
               <a
@@ -154,7 +154,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
               router.push("https://www.eventsx.com/request-a-demo")
             }
           >
-            Request a Demo <Icons.arrow width={17} height={17} />
+            Request Demo <Icons.arrow width={17} height={17} />
           </button>
           <a
             href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
