@@ -99,7 +99,7 @@ const HeroSection = () => {
             href="https://cryptodragonsden.com/projects/eventsx/"
             className="py-6 px-12 btnInvest rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl sm:text-5xl relative group"
           >
-            <Image
+            {/* <Image
               src={"/assets/heart-anim.gif"}
               alt={"heart"}
               height={100}
@@ -112,7 +112,7 @@ const HeroSection = () => {
               height={100}
               width={100}
               className="absolute top-1/2 -right-[10%] transform  -translate-y-1/2 hidden group-hover:block"
-            />
+            /> */}
             Invest Now
           </a>
           {/* <div className="relative">
