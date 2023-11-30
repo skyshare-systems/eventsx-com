@@ -37,6 +37,49 @@ const Advisors = () => {
       title: "Artificial Intelligence",
       linkUrl: "https://www.linkedin.com/in/voice-ai/",
     },
+
+    {
+      image: "/assets/advisors/amrit.png",
+      advisorName: "Amrit Mirchandani",
+      title: "Marketing",
+      linkUrl: "https://www.linkedin.com/in/amrit-mirchandani/",
+    },
+
+    {
+      image: "/assets/advisors/sundeep.png",
+      advisorName: "Sundeep Krishna Siripurapu",
+      title: "Web3 Strategy",
+      linkUrl:
+        "https://www.linkedin.com/in/sundeep-krishna-siripurapu-95575862/",
+    },
+
+    {
+      image: "/assets/advisors/ed-saunders.png",
+      advisorName: "Ed Saunders",
+      title: "Tokenomics, NFT & fundraising",
+      linkUrl: "https://www.linkedin.com/in/ed-saunders/",
+    },
+
+    {
+      image: "/assets/advisors/kayla.png",
+      advisorName: "Kayla Hopley",
+      title: "Community Building & Growth",
+      linkUrl: "https://www.linkedin.com/in/kaylahopley/",
+    },
+
+    {
+      image: "/assets/advisors/riz.png",
+      advisorName: "Riz Mohamed",
+      title: "Partnerships & Collaboration",
+      linkUrl: "https://www.linkedin.com/in/riz-mohamed-22796a229/",
+    },
+
+    {
+      image: "/assets/advisors/bigboychinese.png",
+      advisorName: "BigBoyChinese (Ben)",
+      title: "Web3 and fundraising",
+      linkUrl: "https://www.linkedin.com/in/bigboychinese-ben-976791258/",
+    },
   ];
 
   return (
@@ -65,8 +108,17 @@ const Advisors = () => {
             approach to decision-making.
           </p>
         </div>
-        <div className="max-w-[300px] sm:max-w-[600px] md:max-w-[768px] lg:max-w-[800px] xl:max-w-[1240px] w-full mx-auto sm:my-8">
-          <Marquee
+        <div className="flex flex-wrap justify-center gap-8  max-w-[1240px] w-full mx-auto sm:my-8">
+          {advisorCards.map((advisor, index) => (
+            <AdvisorCard
+              key={index}
+              name={advisor.advisorName}
+              imgUrl={advisor.image}
+              title={advisor.title}
+              linkUrl={advisor.linkUrl}
+            />
+          ))}
+          {/* <Marquee
             gradient
             gradientColor="#0C141B, #0C141B00"
             pauseOnHover
@@ -96,7 +148,7 @@ const Advisors = () => {
                 />
               ))}
             </div>
-          </Marquee>
+          </Marquee> */}
         </div>
       </div>
     </section>
