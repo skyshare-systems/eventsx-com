@@ -11,12 +11,14 @@ const Advisors = () => {
       advisorName: "Franco de la Croix-Vaubois",
       title: "Communities",
       linkUrl: "https://www.linkedin.com/in/globalvillage/",
+      category: "Web2",
     },
     {
       image: "/assets/advisors/david.png",
       advisorName: "David Martin",
       title: "Operations",
       linkUrl: "https://www.linkedin.com/in/davidmartin-ethersolutions/",
+      category: "Web2",
     },
     {
       image: "/assets/advisors/stephanie.png",
@@ -24,18 +26,21 @@ const Advisors = () => {
       title: "IP & Legal",
       linkUrl:
         "https://www.linkedin.com/in/stephanie-loeffler-reading-6b00605/",
+      category: "Web2",
     },
     {
       image: "/assets/advisors/munib.png",
       advisorName: "Munib Ali",
       title: "Regulation",
       linkUrl: "https://www.linkedin.com/in/munibali2/",
+      category: "Web2",
     },
     {
       image: "/assets/advisors/vikrams.png",
       advisorName: "Vikram Modgil",
       title: "Artificial Intelligence",
       linkUrl: "https://www.linkedin.com/in/voice-ai/",
+      category: "Web2",
     },
 
     {
@@ -43,6 +48,7 @@ const Advisors = () => {
       advisorName: "Amrit Mirchandani",
       title: "Marketing",
       linkUrl: "https://www.linkedin.com/in/amrit-mirchandani/",
+      category: "Web3",
     },
 
     {
@@ -51,6 +57,7 @@ const Advisors = () => {
       title: "Web3 Strategy",
       linkUrl:
         "https://www.linkedin.com/in/sundeep-krishna-siripurapu-95575862/",
+      category: "Web3",
     },
 
     {
@@ -58,6 +65,7 @@ const Advisors = () => {
       advisorName: "Ed Saunders",
       title: "Tokenomics, NFT & fundraising",
       linkUrl: "https://www.linkedin.com/in/ed-saunders/",
+      category: "Web3",
     },
 
     {
@@ -65,6 +73,7 @@ const Advisors = () => {
       advisorName: "Kayla Hopley",
       title: "Community Building & Growth",
       linkUrl: "https://www.linkedin.com/in/kaylahopley/",
+      category: "Web3",
     },
 
     {
@@ -72,6 +81,7 @@ const Advisors = () => {
       advisorName: "Riz Mohamed",
       title: "Partnerships & Collaboration",
       linkUrl: "https://www.linkedin.com/in/riz-mohamed-22796a229/",
+      category: "Web3",
     },
 
     {
@@ -79,6 +89,7 @@ const Advisors = () => {
       advisorName: "BigBoyChinese (Ben)",
       title: "Web3 and fundraising",
       linkUrl: "https://www.linkedin.com/in/bigboychinese-ben-976791258/",
+      category: "Web3",
     },
   ];
 
@@ -108,8 +119,8 @@ const Advisors = () => {
             approach to decision-making.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-8  max-w-[1240px] w-full mx-auto sm:my-8">
-          {advisorCards.map((advisor, index) => (
+        <div className="flex flex-wrap justify-center gap-4  max-w-[1240px] w-full mx-auto sm:my-8">
+          {/* {advisorCards.map((advisor, index) => (
             <AdvisorCard
               key={index}
               name={advisor.advisorName}
@@ -117,38 +128,100 @@ const Advisors = () => {
               title={advisor.title}
               linkUrl={advisor.linkUrl}
             />
-          ))}
-          {/* <Marquee
+          ))} */}
+
+          <h2
+            className={cn(
+              titilium.className,
+              "text-white leading-none sm:leading-[4.875rem] text-2xl sm:text-[2rem] text-left sm:text-center"
+            )}
+          >
+            Web 2 Advisor
+          </h2>
+          <Marquee
             gradient
             gradientColor="#0C141B, #0C141B00"
             pauseOnHover
             className="w-full my-4 overflow-y-hidden"
           >
             <div className=" justify-center items-center gap-[3rem] last:mr-[3rem] hidden sm:flex">
-              {advisorCards.map((advisor, index) => (
-                <AdvisorCard
-                  key={index}
-                  name={advisor.advisorName}
-                  imgUrl={advisor.image}
-                  title={advisor.title}
-                  linkUrl={advisor.linkUrl}
-                />
-              ))}
+              {advisorCards
+                .filter((filterdata) => filterdata.category === "Web2")
+                .map((advisor, index) => (
+                  <AdvisorCard
+                    key={index}
+                    name={advisor.advisorName}
+                    imgUrl={advisor.image}
+                    title={advisor.title}
+                    linkUrl={advisor.linkUrl}
+                  />
+                ))}
             </div>
           </Marquee>
           <Marquee pauseOnHover className="w-full my-4 overflow-y-hidden">
             <div className="flex sm:hidden justify-center items-center gap-4 last:mr-4 ">
-              {advisorCards.map((advisor) => (
-                <AdvisorCard
-                  key={advisor.advisorName}
-                  name={advisor.advisorName}
-                  imgUrl={advisor.image}
-                  title={advisor.title}
-                  linkUrl={advisor.linkUrl}
-                />
-              ))}
+              {advisorCards
+                .filter((filterdata) => filterdata.category === "Web2")
+                .map((advisor) => (
+                  <AdvisorCard
+                    key={advisor.advisorName}
+                    name={advisor.advisorName}
+                    imgUrl={advisor.image}
+                    title={advisor.title}
+                    linkUrl={advisor.linkUrl}
+                  />
+                ))}
             </div>
-          </Marquee> */}
+          </Marquee>
+
+          <h2
+            className={cn(
+              titilium.className,
+              "text-white leading-none sm:leading-[4.875rem] text-2xl sm:text-[2rem] text-left sm:text-center"
+            )}
+          >
+            Web 3 Advisor
+          </h2>
+          <Marquee
+            gradient
+            gradientColor="#0C141B, #0C141B00"
+            pauseOnHover
+            direction="right"
+            className="w-full my-4 overflow-y-hidden"
+          >
+            <div className=" justify-center items-center gap-[3rem] last:mr-[3rem] hidden sm:flex">
+              {advisorCards
+                .filter((filterdata) => filterdata.category === "Web3")
+                .map((advisor, index) => (
+                  <AdvisorCard
+                    key={index}
+                    name={advisor.advisorName}
+                    imgUrl={advisor.image}
+                    title={advisor.title}
+                    linkUrl={advisor.linkUrl}
+                  />
+                ))}
+            </div>
+          </Marquee>
+          <Marquee
+            pauseOnHover
+            direction="right"
+            className="w-full my-4 overflow-y-hidden"
+          >
+            <div className="flex sm:hidden justify-center items-center gap-4 last:mr-4 ">
+              {advisorCards
+                .filter((filterdata) => filterdata.category === "Web3")
+                .map((advisor) => (
+                  <AdvisorCard
+                    key={advisor.advisorName}
+                    name={advisor.advisorName}
+                    imgUrl={advisor.image}
+                    title={advisor.title}
+                    linkUrl={advisor.linkUrl}
+                  />
+                ))}
+            </div>
+          </Marquee>
         </div>
       </div>
     </section>

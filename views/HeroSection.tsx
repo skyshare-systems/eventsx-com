@@ -96,8 +96,8 @@ const HeroSection = () => {
         <div className="flex flex-wrap items-center gap-2">
           <a
             target="_blank"
-            href="https://cryptodragonsden.com/projects/eventsx/"
-            className="py-6 px-12 btnInvest rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl sm:text-5xl relative group"
+            href="https://calendly.com/eventsxfundraising/30min?month=2023-12"
+            className="py-3 px-4 flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl relative group bg-[#006bfe] rounded-xl"
           >
             {/* <Image
               src={"/assets/heart-anim.gif"}
@@ -113,7 +113,7 @@ const HeroSection = () => {
               width={100}
               className="absolute top-1/2 -right-[10%] transform  -translate-y-1/2 hidden group-hover:block"
             /> */}
-            Invest Now
+            Schedule a meeting
           </a>
           {/* <div className="relative">
             <a
