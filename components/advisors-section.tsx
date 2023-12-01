@@ -130,14 +130,6 @@ const Advisors = () => {
             />
           ))} */}
 
-          <h2
-            className={cn(
-              titilium.className,
-              "text-white leading-none sm:leading-[4.875rem] text-2xl sm:text-[2rem] text-left sm:text-center"
-            )}
-          >
-            Web 2 Advisor
-          </h2>
           <Marquee
             gradient
             gradientColor="#0C141B, #0C141B00"
