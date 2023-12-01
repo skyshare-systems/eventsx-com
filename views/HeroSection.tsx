@@ -8,6 +8,7 @@ import { Icons } from "@/components/icons";
 import { useRouter } from "next/navigation";
 import Line from "@/public/assets/home/line.svg";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const cards = [
   {
@@ -97,8 +98,9 @@ const HeroSection = () => {
           <a
             target="_blank"
             href="https://calendly.com/eventsxfundraising/30min?month=2023-12"
-            className="py-3 px-4 flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl relative group bg-[#006bfe] rounded-xl"
+            className="py-3 px-6 flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl bg-sky-500 bg-opacity-5 rounded-[499.50px] shadow border border-sky-500 backdrop-blur-sm justify-center"
           >
+            Schedule A Meeting
             {/* <Image
               src={"/assets/heart-anim.gif"}
               alt={"heart"}
@@ -113,7 +115,7 @@ const HeroSection = () => {
               width={100}
               className="absolute top-1/2 -right-[10%] transform  -translate-y-1/2 hidden group-hover:block"
             /> */}
-            Schedule a meeting
+            {/* Schedule a meeting */}
           </a>
           {/* <div className="relative">
             <a

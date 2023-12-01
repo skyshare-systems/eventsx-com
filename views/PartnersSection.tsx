@@ -431,7 +431,7 @@ const technology = [
 const Partners = () => {
   return (
     <div className="flex justify-center items-center" id="partners">
-      <div className="flex flex-col gap-16 items-center grow py-16 max-w-[1920px]">
+      <div className="flex flex-col gap-16 items-center grow pt-2 pb-16 max-w-[1920px]">
         <h1
           className={cn(
             titilium.className,

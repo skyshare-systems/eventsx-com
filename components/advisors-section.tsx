@@ -94,8 +94,8 @@ const Advisors = () => {
   ];
 
   return (
-    <section id="advisors" className="flex justify-center items-center my-16">
-      <div className="flex flex-col items-center gap-8 sm:gap-16">
+    <section id="advisors" className="flex justify-center items-center my-12">
+      <div className="flex flex-col items-center gap-4 sm:gap-16">
         <div className="flex flex-col gap-8 sm:items-center justify-center w-full max-w-[39.125rem] px-4 xl:px-0">
           <h2
             className={cn(
@@ -119,7 +119,7 @@ const Advisors = () => {
             approach to decision-making.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-4  max-w-[1240px] w-full mx-auto sm:my-8">
+        <div className="flex flex-wrap justify-center gap-2  max-w-[1240px] w-full mx-auto">
           {/* {advisorCards.map((advisor, index) => (
             <AdvisorCard
               key={index}
