@@ -85,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
             </ul>
           </div>
 
-          <div className=" flex-row items-center gap-2 hidden xl:flex">
+          <div className=" flex-wrap items-center gap-8 hidden xl:flex">
             <button
               className="py-3 px-4 bg-[#0182eb] rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
               onClick={() =>
