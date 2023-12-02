@@ -119,7 +119,7 @@ const Advisors = () => {
             approach to decision-making.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-2  max-w-[1240px] w-full mx-auto">
+        <div className="flex flex-col justify-center items-center max-w-[1240px] w-full">
           {/* {advisorCards.map((advisor, index) => (
             <AdvisorCard
               key={index}
@@ -134,9 +134,9 @@ const Advisors = () => {
             gradient
             gradientColor="#0C141B, #0C141B00"
             pauseOnHover
-            className="w-full my-4 overflow-y-hidden"
+            className="w-full max-w-[300px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] my-4 overflow-y-hidden"
           >
-            <div className=" justify-center items-center gap-[3rem] last:mr-[3rem] hidden sm:flex">
+            <div className="justify-center items-center gap-[3rem] last:mr-[3rem] hidden sm:flex">
               {advisorCards
                 .filter((filterdata) => filterdata.category === "Web2")
                 .map((advisor, index) => (
@@ -150,7 +150,10 @@ const Advisors = () => {
                 ))}
             </div>
           </Marquee>
-          <Marquee pauseOnHover className="w-full my-4 overflow-y-hidden">
+          <Marquee
+            pauseOnHover
+            className="w-full max-w-[350px] my-4 overflow-y-hidden"
+          >
             <div className="flex sm:hidden justify-center items-center gap-4 last:mr-4 ">
               {advisorCards
                 .filter((filterdata) => filterdata.category === "Web2")
@@ -174,12 +177,13 @@ const Advisors = () => {
           >
             Web 3 Advisor
           </h2>
+
           <Marquee
             gradient
             gradientColor="#0C141B, #0C141B00"
             pauseOnHover
             direction="right"
-            className="w-full my-4 overflow-y-hidden"
+            className="w-full max-w-[300px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] my-4 overflow-y-hidden"
           >
             <div className=" justify-center items-center gap-[3rem] last:mr-[3rem] hidden sm:flex">
               {advisorCards
@@ -198,9 +202,9 @@ const Advisors = () => {
           <Marquee
             pauseOnHover
             direction="right"
-            className="w-full my-4 overflow-y-hidden"
+            className="w-full max-w-[350px] my-4 overflow-y-hidden"
           >
-            <div className="flex sm:hidden justify-center items-center gap-4 last:mr-4 ">
+            <div className="flex sm:hidden justify-center items-center gap-4 last:mr-4">
               {advisorCards
                 .filter((filterdata) => filterdata.category === "Web3")
                 .map((advisor) => (
