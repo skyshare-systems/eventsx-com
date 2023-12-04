@@ -98,7 +98,7 @@ const NFTImplementation = () => {
           <CardNFT
             radialColor={"rgba(243, 247, 250, 0.32)"}
             image={"/assets/nft-implementation/general-icon.png"}
-            quantity={3500}
+            quantity={2500}
             name={"General NFTs"}
             description={
               "Embark on exciting journeys with our generic tickets, providing a spectrum of attendees a golden ticket to participate and relish the events that unfold."

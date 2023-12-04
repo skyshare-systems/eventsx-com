@@ -383,8 +383,10 @@ const Roadmap = () => {
                 `${inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"}`
               )}
             >
-              <span className="text-alice-white font-semibold">Beyond </span>
-              <span className="text-alice-white/30 font-normal">2024 </span>
+              <span className="text-alice-white font-normal">2024</span>
+              <span className="text-alice-white font-semibold">
+                and Beyond{" "}
+              </span>
             </h3>
             <div className="flex flex-wrap gap-4" ref={refPhase5}>
               <CardRoadmap
