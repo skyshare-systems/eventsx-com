@@ -175,7 +175,7 @@ const Advisors = () => {
               "text-white leading-none sm:leading-[4.875rem] text-2xl sm:text-[2rem] text-left sm:text-center"
             )}
           >
-            Web 3 Advisor
+            Web 3 Advisors
           </h2>
 
           <Marquee
