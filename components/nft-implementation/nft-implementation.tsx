@@ -3,6 +3,7 @@ import { titilium } from "@/public/fonts";
 import { StoryCardContent } from "@/types";
 import StoryCard from "./story-card";
 import CardNFT from "./CardNFT";
+import Image from "next/image";
 
 const NFTImplementation = () => {
   const storyCards: StoryCardContent[] = [
@@ -93,7 +94,6 @@ const NFTImplementation = () => {
             experiences.
           </p>
         </div>
-
         <div className="flex flex-wrap  items-center justify-center  gap-8 my-8">
           <CardNFT
             radialColor={"rgba(243, 247, 250, 0.32)"}
@@ -132,6 +132,40 @@ const NFTImplementation = () => {
             borderColor={
               "border-alice-white/8 hover:border-[#008DFF52] hover:bg-[#008DFF0A] duration-150"
             }
+          />
+        </div>
+        <div className="flex flex-wrap items-center justify-center">
+          <Image
+            src={"/assets/nft-implementation/card-gif-1.gif"}
+            alt={"card"}
+            height={500}
+            width={500}
+            unoptimized
+            className="mix-blend-lighten w-full max-w-[300px]"
+          />
+          <Image
+            src={"/assets/nft-implementation/card-gif-2.gif"}
+            alt={"card"}
+            height={500}
+            width={500}
+            unoptimized
+            className="mix-blend-lighten w-full max-w-[300px]"
+          />
+          <Image
+            src={"/assets/nft-implementation/card-gif-3.gif"}
+            alt={"card"}
+            height={500}
+            width={500}
+            unoptimized
+            className="mix-blend-lighten w-full max-w-[300px]"
+          />
+          <Image
+            src={"/assets/nft-implementation/card-gif-4.gif"}
+            alt={"card"}
+            height={500}
+            width={500}
+            unoptimized
+            className="mix-blend-lighten w-full max-w-[300px]"
           />
         </div>
       </div>
