@@ -4,6 +4,7 @@ import { StoryCardContent } from "@/types";
 import StoryCard from "./story-card";
 import CardNFT from "./CardNFT";
 import Image from "next/image";
+import NFTCardSwiper from "../NftCardSwiper";
 
 const NFTImplementation = () => {
   const storyCards: StoryCardContent[] = [
@@ -134,7 +135,10 @@ const NFTImplementation = () => {
             }
           />
         </div>
-        <div className="flex flex-wrap items-center justify-center">
+        {/* <div className="flex items-center justify-center w-full"> */}
+        <NFTCardSwiper />
+        {/* </div> */}
+        {/* <div className="flex flex-wrap items-center justify-center">
           <Image
             src={"/assets/nft-implementation/card-gif-1.gif"}
             alt={"card"}
@@ -167,7 +171,7 @@ const NFTImplementation = () => {
             unoptimized
             className="mix-blend-lighten w-full max-w-[300px]"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
