@@ -135,43 +135,27 @@ const NFTImplementation = () => {
             }
           />
         </div>
-        {/* <div className="flex items-center justify-center w-full"> */}
-        <NFTCardSwiper />
-        {/* </div> */}
-        {/* <div className="flex flex-wrap items-center justify-center">
-          <Image
-            src={"/assets/nft-implementation/card-gif-1.gif"}
-            alt={"card"}
-            height={500}
-            width={500}
-            unoptimized
-            className="mix-blend-lighten w-full max-w-[300px]"
-          />
-          <Image
-            src={"/assets/nft-implementation/card-gif-2.gif"}
-            alt={"card"}
-            height={500}
-            width={500}
-            unoptimized
-            className="mix-blend-lighten w-full max-w-[300px]"
-          />
-          <Image
-            src={"/assets/nft-implementation/card-gif-3.gif"}
-            alt={"card"}
-            height={500}
-            width={500}
-            unoptimized
-            className="mix-blend-lighten w-full max-w-[300px]"
-          />
-          <Image
-            src={"/assets/nft-implementation/card-gif-4.gif"}
-            alt={"card"}
-            height={500}
-            width={500}
-            unoptimized
-            className="mix-blend-lighten w-full max-w-[300px]"
-          />
-        </div> */}
+
+        <div className="flex flex-col gap-8 justify-center items-center">
+          <h2
+            className={cn(
+              titilium.className,
+              "font-semibold leading-[2.5rem] text-left sm:text-center"
+            )}
+          >
+            <span className="text-[1.95313rem] text-alice-white">
+              Your 🔑 to all Events
+            </span>
+            <br />
+            <span className="text-alice-white/50">
+              {" "}
+              Experience all immersive events on our platform with the EventsX
+              NFT pass.
+            </span>
+          </h2>
+
+          <NFTCardSwiper />
+        </div>
       </div>
     </section>
   );
