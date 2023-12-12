@@ -7,9 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Navigation } from "swiper/modules";
-import { titilium } from "@/public/fonts";
-import { cn } from "@/lib/utils";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 const cardnftdata = [
@@ -27,15 +25,23 @@ const cardnftdata = [
   },
 ];
 
-const NFTCardSwiper = () => {
+const NFTCardSwiper = ({ setSwiper }: any) => {
   return (
     <>
       <Swiper
         loop
-        modules={[Pagination, Navigation]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Navigation, Autoplay]}
         slidesPerView={1}
         spaceBetween={20}
         className="mix-blend-lighten w-full max-w-[300px] sm:max-w-[600px]"
+        onSwiper={(s) => {
+          console.log("initialize swiper", s);
+          setSwiper(s);
+        }}
       >
         {cardnftdata.map((data, index) => {
           return (

@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 import { titilium } from "@/public/fonts";
 import { StoryCardContent } from "@/types";
@@ -5,6 +6,7 @@ import StoryCard from "./story-card";
 import CardNFT from "./CardNFT";
 import Image from "next/image";
 import NFTCardSwiper from "../NftCardSwiper";
+import { useState } from "react";
 
 const NFTImplementation = () => {
   const storyCards: StoryCardContent[] = [
@@ -33,6 +35,15 @@ const NFTImplementation = () => {
       ],
     },
   ];
+
+  const [swiper, setSwiper] = useState<any>(null);
+
+  const nexto = () => {
+    swiper.slideNext();
+  };
+  const backto = () => {
+    swiper.slidePrev();
+  };
 
   return (
     <section
@@ -154,7 +165,47 @@ const NFTImplementation = () => {
             </span>
           </h2>
 
-          <NFTCardSwiper />
+          <div className="flex flex-row items-center gap-2 w-full max-w-[250px] sm:max-w-[600px]">
+            <button
+              onClick={backto}
+              className="p-1 bg-alice-white/5 rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+              >
+                <path
+                  d="M11.3775 3.60462C11.1591 3.30815 10.7418 3.24483 10.4453 3.46317C10.2151 3.63277 9.99621 3.8024 9.80554 3.95118C9.42501 4.24819 8.91527 4.65707 8.40367 5.10131C7.89534 5.54267 7.36981 6.03202 6.96615 6.48888C6.76499 6.71652 6.57999 6.95185 6.44167 7.18132C6.31438 7.39245 6.17407 7.68259 6.17407 7.99999C6.17407 8.31739 6.31438 8.60759 6.44167 8.81872C6.57999 9.04819 6.76499 9.28345 6.96615 9.51112C7.36981 9.96799 7.89534 10.4573 8.40367 10.8987C8.91527 11.3429 9.42501 11.7518 9.80554 12.0489C9.99621 12.1976 10.2151 12.3673 10.4453 12.5369C10.7418 12.7552 11.1591 12.6919 11.3775 12.3954C11.4653 12.2762 11.5075 12.1375 11.5074 12.0001V7.99999V3.99997C11.5075 3.8625 11.4653 3.72379 11.3775 3.60462Z"
+                  fill="#F3F7FA"
+                  fillOpacity="0.72"
+                />
+              </svg>
+            </button>
+
+            <NFTCardSwiper setSwiper={setSwiper} />
+
+            <button
+              onClick={nexto}
+              className="p-1 bg-alice-white/5 rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+              >
+                <path
+                  d="M6.30447 3.60462C6.52281 3.30815 6.94014 3.24483 7.2366 3.46317C7.46687 3.63277 7.68579 3.80239 7.87639 3.95117C8.25699 4.24819 8.76666 4.65707 9.27833 5.10131C9.78666 5.54266 10.3121 6.03202 10.7158 6.48888C10.917 6.71653 11.102 6.95187 11.2403 7.18127C11.3676 7.39247 11.5079 7.6826 11.5079 8C11.5079 8.3174 11.3676 8.60753 11.2403 8.81873C11.102 9.04813 10.917 9.28347 10.7158 9.51113C10.3121 9.968 9.78666 10.4573 9.27833 10.8987C8.76666 11.3429 8.25699 11.7518 7.87639 12.0488C7.68579 12.1976 7.46687 12.3673 7.23661 12.5368C6.94014 12.7552 6.52281 12.6919 6.30447 12.3954C6.21669 12.2762 6.17445 12.1375 6.17456 12.0001V8V3.99996C6.17445 3.8625 6.21669 3.72379 6.30447 3.60462Z"
+                  fill="#F3F7FA"
+                  fillOpacity="0.72"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
