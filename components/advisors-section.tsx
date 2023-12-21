@@ -91,6 +91,14 @@ const Advisors = () => {
       linkUrl: "https://www.linkedin.com/in/bigboychinese-ben-976791258/",
       category: "Web3",
     },
+
+    {
+      image: "/assets/advisors/winston.png",
+      advisorName: "Winston Smith",
+      title: "Communications and PR",
+      linkUrl: "https://www.linkedin.com/in/winston-smith-359632293/",
+      category: "Web3",
+    },
   ];
 
   return (
