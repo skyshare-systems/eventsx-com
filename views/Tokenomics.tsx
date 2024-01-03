@@ -27,7 +27,7 @@ const tokenomics = [
     idanimate: "tokenomics_svg__economy",
     title: "EventsX Economy",
     color: "bg-[#008dff]",
-    percentage: 40,
+    percentage: 20,
     description: (
       <div className="p-4 rounded-lg max-w-[700px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
         <h1
@@ -37,7 +37,7 @@ const tokenomics = [
             "text-base font-normal text-alice-white/70"
           )}
         >
-          The EventsX Economy, with the largest allocation of 45%, forms the
+          The EventsX Economy, with the largest allocation of 20%, forms the
           core of the platform. This substantial portion fuels the platform's
           internal economic system, facilitating transactions, incentivizing
           user engagement, and nurturing a vibrant event ecosystem within
@@ -47,7 +47,7 @@ const tokenomics = [
         <hr className="border border-b-[#F3F7FA]/10" />
 
         <div className="flex flex-wrap justify-between gap-2">
-          <TokenomicsCard title={"Tokens"} subTitle={"400,000,000"} />
+          <TokenomicsCard title={"Tokens"} subTitle={"200,000,000"} />
           <TokenomicsCard title={"Release at TGE"} subTitle={"20%"} />
           <TokenomicsCard title={"Cliff"} subTitle={"T + 6"} />
           <TokenomicsCard title={"Vesting Duration"} subTitle={"18 months"} />
@@ -59,7 +59,7 @@ const tokenomics = [
     idanimate: "tokenomics_svg__treasury-fund",
     title: "EventsX Treasury Fund",
     color: "bg-[#0486ff]",
-    percentage: 20,
+    percentage: 19,
     description: (
       <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
         <h1
@@ -69,7 +69,7 @@ const tokenomics = [
             "text-base font-normal text-alice-white/70"
           )}
         >
-          The EventsX Treasury Fund, with a substantial allocation of 20%, acts
+          The EventsX Treasury Fund, with a substantial allocation of 19%, acts
           as a financial backbone for the project. These reserved resources are
           earmarked for ongoing platform development, innovation, and future
           initiatives, ensuring EventsX's sustained growth and adaptability in
@@ -79,7 +79,7 @@ const tokenomics = [
         <hr className="border border-b-[#F3F7FA]/10" />
 
         <div className="flex flex-wrap justify-between">
-          <TokenomicsCard title={"Tokens"} subTitle={"200,000,000"} />
+          <TokenomicsCard title={"Tokens"} subTitle={"190,000,000"} />
           <TokenomicsCard title={"Release at TGE"} subTitle={"0%"} />
           <TokenomicsCard title={"Cliff"} subTitle={"T + 24"} />
           <TokenomicsCard title={"Vesting Duration"} subTitle={"25 months"} />
@@ -87,11 +87,126 @@ const tokenomics = [
       </div>
     ),
   },
+  // seed sale
+  {
+    idanimate: "tokenomics_svg__seed-sale",
+    title: "Seed Sale",
+    color: "bg-[#187eff]",
+    percentage: 17,
+    description: (
+      <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
+        <h1
+          className={cn(
+            titilium.className,
+            "",
+            "text-base font-normal text-alice-white/70"
+          )}
+        >
+          The Seed Sale, constituting 17% of the tokenomics, represents the
+          initial phase of token distribution. During this stage, a limited
+          supply of tokens is offered to early supporters and investors at a
+          favorable price, enabling them to participate in the project's growth
+          from its inception.
+        </h1>
+
+        <hr className="border border-b-[#F3F7FA]/10" />
+
+        <div className="flex flex-col gap-[0.5rem] grow">
+          <div className="flex flex-wrap justify-between gap-2">
+            <TokenomicsCard title={"Tokens"} subTitle={"170,000,000"} />
+            <TokenomicsCard title={"Release at TGE"} subTitle={"100%"} />
+            <TokenomicsCard title={"Cliff"} subTitle={"T + 0"} />
+            <TokenomicsCard title={"Vesting Duration"} subTitle={"0 months"} />
+          </div>
+          <div className="flex flex-wrap gap-4 grow">
+            <TokenomicsCard title={"Price"} subTitle={"$0.018"} />
+            <TokenomicsCard title={"Discount"} subTitle={"25%"} />
+            <TokenomicsCard title={"Total Raise"} subTitle={"3,060,000"} />
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  // future funding 1
+  {
+    idanimate: "tokenomics_svg__future-funding-1",
+    title: "Future Funding 1",
+    color: "bg-[#2a76ff]",
+    percentage: 5,
+    description: (
+      <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
+        <h1
+          className={cn(
+            titilium.className,
+            "",
+            "text-base font-normal text-alice-white/70"
+          )}
+        >
+          As EventsX propels into the future, Future Funding 1 secures a
+          forward-looking 10% of our tokenomics. This allocation is
+          strategically positioned to fortify our long-term vision, supporting
+          upcoming initiatives, expansions, and breakthroughs that will shape
+          the next chapters of EventsX.
+        </h1>
+
+        <hr className="border border-b-[#F3F7FA]/10" />
+
+        <div className="flex flex-wrap justify-between gap-2">
+          <TokenomicsCard title={"Tokens"} subTitle={"100,000,000"} />
+          <TokenomicsCard title={"Release at TGE"} subTitle={"0%"} />
+          <TokenomicsCard title={"Cliff"} subTitle={"T + 6"} />
+          <TokenomicsCard title={"Vesting Duration"} subTitle={"12 months"} />
+        </div>
+      </div>
+    ),
+  },
+  // future funding 2
+  {
+    idanimate: "tokenomics_svg__future-funding-2",
+    title: "Future Funding 2",
+    color: "bg-[#3b6dff]",
+    percentage: 8,
+    description: (
+      <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
+        <h1
+          className={cn(
+            titilium.className,
+            "",
+            "text-base font-normal text-alice-white/70"
+          )}
+        >
+          Positioned at the forefront of innovation, Future Funding 2 comprises
+          10% of our tokenomics, serving as a financial catalyst for EventsX's
+          continuous evolution. With a focus on sustainability and adaptability,
+          this allocation is earmarked for pioneering projects, technological
+          advancements, and unforeseen opportunities that will define our
+          trajectory in the dynamic blockchain landscape.
+        </h1>
+
+        <hr className="border border-b-[#F3F7FA]/10" />
+
+        <div className="flex flex-col gap-[0.5rem] grow">
+          <div className="flex flex-wrap justify-between gap-2">
+            <TokenomicsCard title={"Tokens"} subTitle={"100,000,000"} />
+            <TokenomicsCard title={"Release at TGE"} subTitle={"0%"} />
+            <TokenomicsCard title={"Cliff"} subTitle={"T + 12"} />
+            <TokenomicsCard title={"Vesting Duration"} subTitle={"12 months"} />
+          </div>
+          {/* <div className="flex flex-wrap gap-4 grow">
+            <TokenomicsCard title={"Price"} subTitle={"$0.0075"} />
+            <TokenomicsCard title={"Discount"} subTitle={"25%"} />
+            <TokenomicsCard title={"Total Raise"} subTitle={"600,000"} />
+          </div> */}
+        </div>
+      </div>
+    ),
+  },
+  // team
   {
     idanimate: "tokenomics_svg__team",
     title: "Team",
-    color: "bg-[#187eff]",
-    percentage: 8,
+    color: "bg-[#4c63ff]",
+    percentage: 5,
     description: (
       <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
         <h1
@@ -110,20 +225,28 @@ const tokenomics = [
 
         <hr className="border border-b-[#F3F7FA]/10" />
 
-        <div className="flex flex-wrap justify-between gap-2">
-          <TokenomicsCard title={"Tokens"} subTitle={"80,000,000"} />
-          <TokenomicsCard title={"Release at TGE"} subTitle={"0%"} />
-          <TokenomicsCard title={"Cliff"} subTitle={"T + 6"} />
-          <TokenomicsCard title={"Vesting Duration"} subTitle={"24 months"} />
+        <div className="flex flex-col gap-[0.5rem] grow">
+          <div className="flex flex-wrap justify-between gap-2">
+            <TokenomicsCard title={"Tokens"} subTitle={"80,000,000"} />
+            <TokenomicsCard title={"Release at TGE"} subTitle={"0%"} />
+            <TokenomicsCard title={"Cliff"} subTitle={"T + 4"} />
+            <TokenomicsCard title={"Vesting Duration"} subTitle={"12 months"} />
+          </div>
+          {/* <div className="flex flex-wrap gap-4 grow">
+            <TokenomicsCard title={"Price"} subTitle={"$0.005"} />
+            <TokenomicsCard title={"Discount"} subTitle={"50%"} />
+            <TokenomicsCard title={"Total Raise"} subTitle={"250,000"} />
+          </div> */}
         </div>
       </div>
     ),
   },
+  // partnership
   {
-    idanimate: "tokenomics_svg__parnerships",
+    idanimate: "tokenomics_svg__partnerships",
     title: "Partnerships",
-    color: "bg-[#2a76ff]",
-    percentage: 5,
+    color: "bg-[#5c57fe]",
+    percentage: 4,
     description: (
       <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
         <h1
@@ -151,117 +274,9 @@ const tokenomics = [
       </div>
     ),
   },
+  // liquidity
   {
-    idanimate: "tokenomics_svg__private-sale",
-    title: "Private Sale",
-    color: "bg-[#3b6dff]",
-    percentage: 8,
-    description: (
-      <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
-        <h1
-          className={cn(
-            titilium.className,
-            "",
-            "text-base font-normal text-alice-white/70"
-          )}
-        >
-          The Private Sale, accounting for 5% of the token allocation, involves
-          a select group of strategic investors. This phase allows EventsX to
-          secure significant funding from specific individuals or institutions
-          who believe in the project's potential, ensuring a strong financial
-          foundation.
-        </h1>
-
-        <hr className="border border-b-[#F3F7FA]/10" />
-
-        <div className="flex flex-col gap-[0.5rem] grow">
-          <div className="flex flex-wrap justify-between gap-2">
-            <TokenomicsCard title={"Tokens"} subTitle={"80,000,000"} />
-            <TokenomicsCard title={"Release at TGE"} subTitle={"10%"} />
-            <TokenomicsCard title={"Cliff"} subTitle={"T + 2"} />
-            <TokenomicsCard title={"Vesting Duration"} subTitle={"12 months"} />
-          </div>
-          <div className="flex flex-wrap gap-4 grow">
-            <TokenomicsCard title={"Price"} subTitle={"$0.0075"} />
-            <TokenomicsCard title={"Discount"} subTitle={"25%"} />
-            <TokenomicsCard title={"Total Raise"} subTitle={"600,000"} />
-          </div>
-        </div>
-      </div>
-    ),
-  },
-  {
-    idanimate: "tokenomics_svg__seed-sale",
-    title: "Seed Sale",
-    color: "bg-[#4c63ff]",
-    percentage: 5,
-    description: (
-      <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
-        <h1
-          className={cn(
-            titilium.className,
-            "",
-            "text-base font-normal text-alice-white/70"
-          )}
-        >
-          The Seed Sale, constituting 4% of the tokenomics, represents the
-          initial phase of token distribution. During this stage, a limited
-          supply of tokens is offered to early supporters and investors at a
-          favorable price, enabling them to participate in the project's growth
-          from its inception.
-        </h1>
-
-        <hr className="border border-b-[#F3F7FA]/10" />
-
-        <div className="flex flex-col gap-[0.5rem] grow">
-          <div className="flex flex-wrap justify-between gap-2">
-            <TokenomicsCard title={"Tokens"} subTitle={"50,000,000"} />
-            <TokenomicsCard title={"Release at TGE"} subTitle={"10%"} />
-            <TokenomicsCard title={"Cliff"} subTitle={"T + 4"} />
-            <TokenomicsCard title={"Vesting Duration"} subTitle={"15 months"} />
-          </div>
-          <div className="flex flex-wrap gap-4 grow">
-            <TokenomicsCard title={"Price"} subTitle={"$0.005"} />
-            <TokenomicsCard title={"Discount"} subTitle={"50%"} />
-            <TokenomicsCard title={"Total Raise"} subTitle={"250,000"} />
-          </div>
-        </div>
-      </div>
-    ),
-  },
-  {
-    idanimate: "tokenomics_svg__marketing",
-    title: "Marketing",
-    color: "bg-[#5c57fe]",
-    percentage: 4,
-    description: (
-      <div className="p-4 rounded-lg max-w-[609px] w-full bg-alice-white/5 backdrop-blur flex flex-col gap-2">
-        <h1
-          className={cn(
-            titilium.className,
-            "",
-            "text-base font-normal text-alice-white/70"
-          )}
-        >
-          The Marketing allocation, representing 4% of the tokens, is utilized
-          for strategic campaigns and outreach initiatives. This investment
-          ensures widespread awareness about EventsX, attracting users,
-          investors, and event organizers to the platform.
-        </h1>
-
-        <hr className="border border-b-[#F3F7FA]/10" />
-
-        <div className="flex flex-wrap justify-between gap-2">
-          <TokenomicsCard title={"Tokens"} subTitle={"40,000,000"} />
-          <TokenomicsCard title={"Release at TGE"} subTitle={"30%"} />
-          <TokenomicsCard title={"Cliff"} subTitle={"T + 1"} />
-          <TokenomicsCard title={"Vesting Duration"} subTitle={"7 months"} />
-        </div>
-      </div>
-    ),
-  },
-  {
-    idanimate: "tokenomics_svg__advisors",
+    idanimate: "tokenomics_svg__liquidity",
     title: "Advisors",
     color: "bg-[#6b4afa]",
     percentage: 3,
@@ -274,27 +289,27 @@ const tokenomics = [
             "text-base font-normal text-alice-white/70"
           )}
         >
-          The Advisors allocation, constituting 3% of the tokens, supports
-          experienced professionals or experts who provide valuable guidance to
-          EventsX. Their insights contribute to informed decision-making,
-          ensuring the project's trajectory aligns with industry best practices
-          and market demands.
+          Liquidity, with a 5% allocation, focuses on ensuring the availability
+          of EventsX tokens in the market. This reserved portion contributes to
+          liquidity pools, allowing for seamless trading of tokens and
+          maintaining stable market conditions.
         </h1>
 
         <hr className="border border-b-[#F3F7FA]/10" />
 
         <div className="flex flex-wrap justify-between gap-2">
-          <TokenomicsCard title={"Tokens"} subTitle={"30,000,000"} />
-          <TokenomicsCard title={"Release at TGE"} subTitle={"0%"} />
-          <TokenomicsCard title={"Cliff"} subTitle={"T + 3"} />
-          <TokenomicsCard title={"Vesting Duration"} subTitle={"15 months"} />
+          <TokenomicsCard title={"Tokens"} subTitle={"50,000,000"} />
+          <TokenomicsCard title={"Release at TGE"} subTitle={"100%"} />
+          {/* <TokenomicsCard title={"Cliff"} subTitle={"T + 3"} />
+          <TokenomicsCard title={"Vesting Duration"} subTitle={"15 months"} /> */}
         </div>
       </div>
     ),
   },
+  // marketing
   {
-    idanimate: "tokenomics_svg__ido",
-    title: "IDO (Initial DEX Offering)",
+    idanimate: "tokenomics_svg__marketing",
+    title: "Marketing",
     color: "bg-[#793af4]",
     percentage: 4,
     description: (
@@ -306,34 +321,34 @@ const tokenomics = [
             "text-base font-normal text-alice-white/70"
           )}
         >
-          The IDO, constituting 3% of the allocation, is a decentralized
-          fundraising event where EventsX tokens are made available to the
-          public via a decentralized exchange. This approach ensures a fair and
-          transparent token distribution, enabling broader community
-          participation in the project.
+          The Marketing allocation, representing 3% of the tokens, is utilized
+          for strategic campaigns and outreach initiatives. This investment
+          ensures widespread awareness about EventsX, attracting users,
+          investors, and event organizers to the platform.
         </h1>
 
         <hr className="border border-b-[#F3F7FA]/10" />
 
         <div className="flex flex-col gap-[0.5rem] grow">
           <div className="flex flex-wrap justify-between gap-2">
-            <TokenomicsCard title={"Tokens"} subTitle={"40,000,000"} />
-            <TokenomicsCard title={"Release at TGE"} subTitle={"20%"} />
+            <TokenomicsCard title={"Tokens"} subTitle={"30,000,000"} />
+            <TokenomicsCard title={"Release at TGE"} subTitle={"30%"} />
             <TokenomicsCard title={"Cliff"} subTitle={"T + 1"} />
-            <TokenomicsCard title={"Vesting Duration"} subTitle={"4 months"} />
+            <TokenomicsCard title={"Vesting Duration"} subTitle={"7 months"} />
           </div>
-          <div className="flex flex-wrap gap-4 grow">
+          {/* <div className="flex flex-wrap gap-4 grow">
             <TokenomicsCard title={"Price"} subTitle={"$0.01"} />
             <TokenomicsCard title={"Discount"} subTitle={"0%"} />
             <TokenomicsCard title={"Total Raise"} subTitle={"400,000"} />
-          </div>
+          </div> */}
         </div>
       </div>
     ),
   },
+  // advisors
   {
-    idanimate: "tokenomics_svg__liquidity",
-    title: "Liquidity",
+    idanimate: "tokenomics_svg__advisors",
+    title: "Advisors",
     color: "bg-[#793af4]",
     percentage: 3,
     description: (
@@ -345,17 +360,19 @@ const tokenomics = [
             "text-base font-normal text-alice-white/70"
           )}
         >
-          Liquidity, with a 3% allocation, focuses on ensuring the availability
-          of EventsX tokens in the market. This reserved portion contributes to
-          liquidity pools, allowing for seamless trading of tokens and
-          maintaining stable market conditions.
+          The Marketing allocation, representing 3% of the tokens, is utilized
+          for strategic campaigns and outreach initiatives. This investment
+          ensures widespread awareness about EventsX, attracting users,
+          investors, and event organizers to the platform.
         </h1>
 
         <hr className="border border-b-[#F3F7FA]/10" />
 
         <div className="flex flex-wrap justify-start gap-2">
           <TokenomicsCard title={"Tokens"} subTitle={"30,000,000"} />
-          <TokenomicsCard title={"Release at TGE"} subTitle={"100%"} />
+          <TokenomicsCard title={"Release at TGE"} subTitle={"30%"} />
+          <TokenomicsCard title={"Cliff"} subTitle={"T + 1"} />
+          <TokenomicsCard title={"Vesting Duration"} subTitle={"7 months"} />
         </div>
       </div>
     ),
@@ -484,19 +501,23 @@ const Tokenomics = () => {
               return (
                 <div
                   onMouseEnter={() => setDescription(data.description)}
-                  className={`flex flex-col gap-2 w-full max-w-[220px] p-4 min-w-[200px] rounded-2xl duration-150 
-                    
-                        hover:bg-alice-white/10
-                    `}
+                  className={`flex flex-col gap-2 w-full max-w-[220px] p-4 min-w-[200px] rounded-2xl duration-150 group
+                        hover:bg-alice-white/10`}
                 >
-                  <h1
-                    className={cn(
-                      titilium.className,
-                      "text-2xl font-bold text-primary"
-                    )}
-                  >
-                    {data.percentage}%
-                  </h1>
+                  <div className="flex flex-row justify-between items-center gap-8">
+                    <h1
+                      className={cn(
+                        titilium.className,
+                        "text-2xl font-bold text-primary"
+                      )}
+                    >
+                      {data.percentage}%
+                    </h1>
+                    <h1 className="group-hover:opacity-100 opacity-0 h-3 w-3 bg-primary rounded-full text-transparent">
+                      0
+                    </h1>
+                  </div>
+
                   <h1
                     className={cn(
                       titilium.className,
@@ -518,14 +539,14 @@ const Tokenomics = () => {
               </div>
             </div>
             <div className="flex flex-wrap items-center justify-center">
-              <TokenomicsCardV2 title={"FDV"} subTitle={"$10,000,000"} />
-              <TokenomicsCardV2 title={"IMC"} subTitle={"$1,430,000"} />
-              <TokenomicsCardV2 title={"Liquidity"} subTitle={"$300,000"} />
+              <TokenomicsCardV2 title={"FDV"} subTitle={"$24,000,000"} />
+              <TokenomicsCardV2 title={"IMC"} subTitle={"$6,456,000"} />
+              <TokenomicsCardV2 title={"Liquidity"} subTitle={"$1,200,000"} />
               <TokenomicsCardV2
                 title={"IMC Without Liq"}
-                subTitle={"$1,130,000"}
+                subTitle={"$5,256,000"}
               />
-              <TokenomicsCardV2 title={"Hard Cap"} subTitle={"$1,250,000"} />
+              <TokenomicsCardV2 title={"Hard Cap"} subTitle={"$3,060,000"} />
               <TokenomicsCardV2 title={"Investor Control"} subTitle={"17%"} />
             </div>
             <div className="block md:hidden">{description}</div>
