@@ -112,17 +112,17 @@ const HeroSection = () => {
               "text-base font-normal text-alice-white/70 text-center"
             )}
           >
-            Explore the opportunity to invest in the seed funding round.
+            Explore the opportunity to invest in the LBP funding round.
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
           <a
             target="_blank"
-            href="https://calendly.com/eventsxfundraising/30min?month=2023-12"
+            href="https://fjordfoundry.com/"
             className="py-3 px-6 flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl bg-sky-500 bg-opacity-5 rounded-[499.50px] shadow border border-sky-500 backdrop-blur-sm justify-center"
           >
-            Schedule A Meeting
+            Invest
             {/* <Image
               src={"/assets/heart-anim.gif"}
               alt={"heart"}

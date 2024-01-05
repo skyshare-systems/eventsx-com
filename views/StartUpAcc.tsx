@@ -2,60 +2,21 @@
 import React from "react";
 import { titilium } from "@/public/fonts";
 import { cn } from "@/lib/utils";
-import Facebook from "@/public/socmed-icons/facebook.svg";
-import Instagram from "@/public/socmed-icons/instragram.svg";
-import Twitter from "@/public/socmed-icons/twitter.svg";
-import LinkedIn from "@/public/socmed-icons/linkedin.svg";
-import Youtube from "@/public/socmed-icons/youtube.svg";
-import Discord from "@/public/socmed-icons/discord.svg";
-import Telegram from "@/public/socmed-icons/telegram.svg";
-
-const socmed = [
-  {
-    icon: <Facebook />,
-    linkUrl: "https://www.facebook.com/EventsXofficial",
-  },
-  {
-    icon: <Instagram />,
-    linkUrl: "https://www.instagram.com/eventsxofficial/",
-  },
-  {
-    icon: <Twitter />,
-    linkUrl: "https://twitter.com/EventsXofficial",
-  },
-  {
-    icon: <LinkedIn />,
-    linkUrl: "https://www.linkedin.com/company/eventsx-limited/",
-  },
-  {
-    icon: <Youtube />,
-    linkUrl:
-      "https://www.youtube.com/channel/UCSNR8VUdUKcI9MMrwSSNT4g/featured",
-  },
-  {
-    icon: <Discord />,
-    linkUrl: "https://discord.gg/PrjTcZbY3z",
-  },
-  {
-    icon: <Telegram />,
-    linkUrl: "https://t.me/EventsX_Official",
-  },
-];
 
 const startupaccelerator = [
   {
     name: "aws",
-    image: "/assets/nft-implementation/start-up.png",
+    image: "/assets/nft-implementation/start-up-v2.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
   {
     name: "aws",
-    image: "/assets/nft-implementation/aws.png",
+    image: "/assets/nft-implementation/aws-v2.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
   {
     name: "startup",
-    image: "/assets/nft-implementation/nvidia.png",
+    image: "/assets/nft-implementation/nvidia-v2.png",
     // linkUrl: "https://aws.amazon.com/startups",
   },
 ];
@@ -63,12 +24,12 @@ const startupaccelerator = [
 const poweredby = [
   {
     name: "bitcoin",
-    image: "/assets/nft-implementation/bitcoin.png",
+    image: "/assets/nft-implementation/bitcoin-v3.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
   {
     name: "bnb",
-    image: "/assets/nft-implementation/bnb.png",
+    image: "/assets/nft-implementation/bnb-v3.png",
     // linkUrl: "https://aws.amazon.com/startups",
   },
 ];
@@ -87,13 +48,20 @@ const StartUpAcc = () => {
             Startup accelerator programs
           </h1>
 
-          <div className="flex flex-wrap justify-center items-center gap-12">
+          <div className="flex flex-wrap justify-center items-center gap-10">
             {startupaccelerator.map((data, index) => {
-              return <img key={index} src={data.image} alt={data.name} />;
+              return (
+                <img
+                  key={index}
+                  src={data.image}
+                  alt={data.name}
+                  className="brightness-0 invert hover:brightness-100 hover:invert-0 hover:bg-white p-2 rounded-lg duration-300"
+                />
+              );
             })}
           </div>
         </div>
-        <div className="flex flex-col gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 justify-center items-center w-full">
           <h1
             className={cn(
               titilium.className,
@@ -103,9 +71,16 @@ const StartUpAcc = () => {
             Powered by
           </h1>
 
-          <div className="flex flex-wrap justify-center items-center gap-12">
+          <div className="flex flex-wrap justify-center items-center gap-12 w-full">
             {poweredby.map((data, index) => {
-              return <img key={index} src={data.image} alt={data.name} />;
+              return (
+                <img
+                  key={index}
+                  src={data.image}
+                  alt={data.name}
+                  className="brightness-0 invert hover:brightness-100 hover:invert-0 hover:bg-white p-2 rounded-lg duration-300"
+                />
+              );
             })}
           </div>
         </div>
