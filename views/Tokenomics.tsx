@@ -90,7 +90,7 @@ const tokenomics = [
   // seed sale
   {
     idanimate: "tokenomics_svg__seed-sale",
-    title: "Seed Sale",
+    title: "LEP",
     color: "bg-[#187eff]",
     percentage: 17,
     description: (
@@ -102,11 +102,11 @@ const tokenomics = [
             "text-base font-normal text-alice-white/70"
           )}
         >
-          The Seed Sale, constituting 17% of the tokenomics, represents the
-          initial phase of token distribution. During this stage, a limited
-          supply of tokens is offered to early supporters and investors at a
-          favorable price, enabling them to participate in the project's growth
-          from its inception.
+          The LEP, constituting 17% of the tokenomics, represents the initial
+          phase of token distribution. During this stage, a limited supply of
+          tokens is offered to early supporters and investors at a favorable
+          price, enabling them to participate in the project's growth from its
+          inception.
         </h1>
 
         <hr className="border border-b-[#F3F7FA]/10" />
@@ -118,11 +118,11 @@ const tokenomics = [
             <TokenomicsCard title={"Cliff"} subTitle={"T + 0"} />
             <TokenomicsCard title={"Vesting Duration"} subTitle={"0 months"} />
           </div>
-          <div className="flex flex-wrap gap-4 grow">
+          {/* <div className="flex flex-wrap gap-4 grow">
             <TokenomicsCard title={"Price"} subTitle={"$0.018"} />
             <TokenomicsCard title={"Discount"} subTitle={"25%"} />
             <TokenomicsCard title={"Total Raise"} subTitle={"3,060,000"} />
-          </div>
+          </div> */}
         </div>
       </div>
     ),

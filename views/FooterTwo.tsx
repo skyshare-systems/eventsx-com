@@ -68,7 +68,7 @@ const FooterTwo = () => {
       </div>
 
       <div className="flex justify-center items-center grow bg-alice-white">
-        <div className="flex flex-wrap justify-center xl:justify-between items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
+        <div className="flex flex-wrap justify-center gap-8 items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
           <div className="flex flex-col gap-4 ">
             <h1
               className={cn(
@@ -94,7 +94,7 @@ const FooterTwo = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-1 justify-center items-center">
+          {/* <div className="flex flex-col gap-1 justify-center items-center">
             <h1
               className={cn(
                 titilium.className,
@@ -113,7 +113,7 @@ const FooterTwo = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
 
           <div className="flex flex-wrap justify-center items-center gap-3">
             <a href="https://prighter.com/q/16998098797" target="_blank">

@@ -4,56 +4,76 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { outfit, titilium } from "@/public/fonts";
 import { cn } from "@/lib/utils";
-import { Icons } from "@/components/icons";
 import { useRouter } from "next/navigation";
 import Line from "@/public/assets/home/line.svg";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 const cards = [
   {
     name: "General Admission",
     imgUrl: "/assets/home/nftcard-01.png",
+    image: "/assets/nft-implementation/card-gif-1.gif",
   },
   {
     name: "Premium Experience",
     imgUrl: "/assets/home/nftcard-02.png",
+    image: "/assets/nft-implementation/card-gif-2.gif",
   },
   {
     name: "Group Dynamics",
     imgUrl: "/assets/home/nftcard-03.png",
+    image: "/assets/nft-implementation/card-gif-3.gif",
   },
   {
     name: "Time Bound",
     imgUrl: "/assets/home/nftcard-04.png",
+    image: "/assets/nft-implementation/card-gif-4.gif",
   },
   {
     name: "General Admission",
     imgUrl: "/assets/home/nftcard-01.png",
+    image: "/assets/nft-implementation/card-gif-1.gif",
   },
   {
     name: "Premium Experience",
     imgUrl: "/assets/home/nftcard-02.png",
+    image: "/assets/nft-implementation/card-gif-2.gif",
   },
   {
     name: "Group Dynamics",
     imgUrl: "/assets/home/nftcard-03.png",
+    image: "/assets/nft-implementation/card-gif-3.gif",
   },
   {
     name: "Time Bound",
     imgUrl: "/assets/home/nftcard-04.png",
+    image: "/assets/nft-implementation/card-gif-4.gif",
   },
 ];
 
 const HeroSection = () => {
-  const router = useRouter();
   return (
     <div
       id="home"
       className={`flex justify-center items-center w-full pt-[5rem] bg-cover bg-no-repeat bg-center`}
     >
-      <div className="flex flex-col gap-4 justify-center items-center max-w-[1280px] pb-0 p-4 sm:p-16 sm:pb-0">
-        <div className="flex flex-col gap-4 grow max-w-[712px] px-4 xl:px-0">
+      <div className="flex flex-col gap-4 justify-center items-center max-w-[1280px] pb-0 p-4 sm:p-16 sm:pb-0 relative">
+        <Image
+          src={"/icons/bitcoin-icon.png"}
+          alt={"bitcoin"}
+          height={500}
+          width={500}
+          className="absolute top-[22%] left-[1%] transform -translate-y-[22%] w-full max-w-[120px] z-[2] hidden lg:block"
+        />
+
+        <Image
+          src={"/icons/bnb-icon.png"}
+          alt={"bitcoin"}
+          height={500}
+          width={500}
+          className="absolute top-[22%] right-[1%] transform -translate-y-[22%] w-full max-w-[120px] z-[2] hidden lg:block"
+        />
+        <div className="flex flex-col gap-4 grow max-w-[712px] px-4 xl:px-0 relative z-[3]">
           <h1
             className={cn(
               outfit.className,
@@ -164,28 +184,19 @@ const HeroSection = () => {
             pauseOnHover
             speed={100}
             pauseOnClick
-            className="faded-edgesv2"
+            className="faded-edgesv2 mix-blend-lighten"
           >
-            <div className="flex justify-center items-center gap-4 last:mr-4">
+            <div className="flex justify-center items-center last:mr-8 mix-blend-lighten">
               {cards.map((data, index) => {
                 return (
                   <img
                     key={index}
-                    src={data.imgUrl}
+                    src={data.image}
                     alt={data.name}
                     height={500}
                     width={400}
-                    className="scale-90 hover:scale-100 duration-150 w-full max-w-[260px] sm:max-w-[400px]"
+                    className="scale-90 hover:scale-100 duration-150 w-full max-w-[260px] sm:max-w-[400px] mix-blend-lighten -mx-[4rem] rounded-lg"
                   />
-                  // <div className='flex items-center justify-center h-[300px] w-[215px]' key={index}>
-                  //   <video
-                  //     autoPlay
-                  //     loop
-                  //     muted
-                  //     src={'/video/001.mp4'}
-                  //     className='video-bg object-cover z-[3] h-[400px] w-[210px] '
-                  //   />
-                  // </div>
                 );
               })}
             </div>

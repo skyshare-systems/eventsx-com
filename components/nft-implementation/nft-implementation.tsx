@@ -7,6 +7,7 @@ import CardNFT from "./CardNFT";
 import Image from "next/image";
 import NFTCardSwiper from "../NftCardSwiper";
 import { useState } from "react";
+import Line from "@/public/assets/home/line.svg";
 
 const NFTImplementation = () => {
   const storyCards: StoryCardContent[] = [
@@ -48,8 +49,10 @@ const NFTImplementation = () => {
   return (
     <section
       id="nft-implementation"
-      className="py-16  md:p-16 bg-[url('/assets/nft-implementation/bottom-glow.png')] bg-contain bg-no-repeat bg-top"
+      className="py-16 relative  md:p-16 bg-[url('/assets/nft-implementation/bottom-glow.png')] bg-contain bg-no-repeat bg-top"
     >
+      <Line className="absolute  left-1/2 transform -translate-x-1/2 top-0  w-full max-w-[250px] sm:max-w-[776px] -z-[1]" />
+
       <div className="max-w-[64rem] mx-auto px-4 xl:px-0">
         <div className="flex items-center flex-col space-y-4 max-w-[39.8rem] mx-auto">
           <h2
