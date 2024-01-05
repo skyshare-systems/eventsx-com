@@ -15,11 +15,13 @@ import FooterThree from "@/views/FooterThree";
 import Team from "@/views/Team";
 import UseCase from "@/views/UseCase";
 import Tokenomics from "@/views/Tokenomics";
+import StartUpAcc from "@/views/StartUpAcc";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <StartUpAcc />
       <NFTImplementation />
       <Tokenomics />
       <UseCase />
