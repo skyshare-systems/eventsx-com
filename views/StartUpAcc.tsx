@@ -45,83 +45,68 @@ const socmed = [
 const startupaccelerator = [
   {
     name: "aws",
-    image: "/assets/footer-icons/aws-activate.jpg",
+    image: "/assets/nft-implementation/start-up.png",
+    // linkUrl: "https://www.nvidia.com/en-gb/startups/",
+  },
+  {
+    name: "aws",
+    image: "/assets/nft-implementation/aws.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
   {
     name: "startup",
-    image: "/assets/footer-icons/startup.jpg",
+    image: "/assets/nft-implementation/nvidia.png",
     // linkUrl: "https://aws.amazon.com/startups",
   },
 ];
 
 const poweredby = [
   {
-    name: "bnb",
-    image: "/assets/footer-icons/bitcoin.jpg",
+    name: "bitcoin",
+    image: "/assets/nft-implementation/bitcoin.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
   {
-    name: "bitcoin",
-    image: "/assets/footer-icons/bnb.jpg",
+    name: "bnb",
+    image: "/assets/nft-implementation/bnb.png",
     // linkUrl: "https://aws.amazon.com/startups",
   },
 ];
 
 const StartUpAcc = () => {
   return (
-    <div className="flex justify-center items-center bg-footer py-2 my-2 relative">
-      <div className="flex justify-center items-center bg-footer py-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-2xl h-full w-full -z-[1]">
-        asd
-      </div>
+    <div className="flex justify-center items-center py-2 mt-2 mb-32 relative">
+      <div className="flex flex-col justify-center gap-8 items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
+        <div className="flex flex-col gap-4 justify-center items-center">
+          <h1
+            className={cn(
+              titilium.className,
+              "text-alice-white/30 text-xl font-bold"
+            )}
+          >
+            Startup accelerator programs
+          </h1>
 
-      <div className="flex justify-center items-center grow bg-[#ffffff]">
-        <div className="flex flex-wrap justify-center gap-8 items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
-          <div className="flex flex-col gap-1 justify-center items-center">
-            <h1
-              className={cn(
-                titilium.className,
-                "text-blue-black/50 text-base font-semibold"
-              )}
-            >
-              Startup accelerator programs
-            </h1>
-
-            <div className="flex flex-wrap justify-center items-center gap-4">
-              {startupaccelerator.map((data, index) => {
-                return (
-                  <img
-                    key={index}
-                    src={data.image}
-                    alt={data.name}
-                    className="w-full max-w-[200px]"
-                  />
-                );
-              })}
-            </div>
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            {startupaccelerator.map((data, index) => {
+              return <img key={index} src={data.image} alt={data.name} />;
+            })}
           </div>
-          <div className="flex flex-col gap-1 justify-center items-center">
-            <h1
-              className={cn(
-                titilium.className,
-                "text-blue-black/50 text-base font-semibold"
-              )}
-            >
-              Powered by
-            </h1>
+        </div>
+        <div className="flex flex-col gap-4 justify-center items-center">
+          <h1
+            className={cn(
+              titilium.className,
+              "text-alice-white/30 text-xl font-bold"
+            )}
+          >
+            Powered by
+          </h1>
 
-            <div className="flex flex-wrap justify-center items-center gap-4">
-              {poweredby.map((data, index) => {
-                return (
-                  <img
-                    key={index}
-                    src={data.image}
-                    alt={data.name}
-                    className="w-full max-w-[200px]"
-                  />
-                );
-              })}
-            </div>
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            {poweredby.map((data, index) => {
+              return <img key={index} src={data.image} alt={data.name} />;
+            })}
           </div>
         </div>
       </div>

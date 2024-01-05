@@ -63,7 +63,8 @@ const HeroSection = () => {
           alt={"bitcoin"}
           height={500}
           width={500}
-          className="absolute top-[22%] left-[1%] transform -translate-y-[22%] w-full max-w-[120px] z-[2] hidden lg:block"
+          unoptimized
+          className="absolute top-[15%] left-[5%] transform -translate-y-[22%] w-full max-w-[250px] z-[2] hidden lg:block"
         />
 
         <Image
@@ -71,7 +72,8 @@ const HeroSection = () => {
           alt={"bitcoin"}
           height={500}
           width={500}
-          className="absolute top-[22%] right-[1%] transform -translate-y-[22%] w-full max-w-[120px] z-[2] hidden lg:block"
+          unoptimized
+          className="absolute top-[35%] right-[5%] transform -translate-y-[22%] w-full max-w-[250px] z-[2] hidden lg:block"
         />
         <div className="flex flex-col gap-4 grow max-w-[712px] px-4 xl:px-0 relative z-[3]">
           <h1

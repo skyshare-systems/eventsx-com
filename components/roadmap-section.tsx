@@ -541,6 +541,18 @@ const Roadmap = () => {
                   inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
                 } `}
               />
+
+              <CardRoadmap
+                title={
+                  <>
+                    <span className="font-normal">BSC20 Network Launch </span>
+                  </>
+                }
+                color={"#008bfb"}
+                className={`max-w-[14rem] delay-75 ${
+                  inViewPhase5 ? "opacity-100" : "opacity-0 translate-y-28"
+                } `}
+              />
             </div>
           </div>
         </div>

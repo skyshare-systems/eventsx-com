@@ -8,6 +8,7 @@ import Image from "next/image";
 import NFTCardSwiper from "../NftCardSwiper";
 import { useState } from "react";
 import Line from "@/public/assets/home/line.svg";
+import StartUpAcc from "@/views/StartUpAcc";
 
 const NFTImplementation = () => {
   const storyCards: StoryCardContent[] = [
@@ -54,6 +55,8 @@ const NFTImplementation = () => {
       <Line className="absolute  left-1/2 transform -translate-x-1/2 top-0  w-full max-w-[250px] sm:max-w-[776px] -z-[1]" />
 
       <div className="max-w-[64rem] mx-auto px-4 xl:px-0">
+        <StartUpAcc />
+
         <div className="flex items-center flex-col space-y-4 max-w-[39.8rem] mx-auto">
           <h2
             className={cn(
