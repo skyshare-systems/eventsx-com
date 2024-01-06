@@ -500,6 +500,7 @@ const Tokenomics = () => {
             {tokenomics.map((data, index) => {
               return (
                 <div
+                  key={index}
                   onMouseEnter={() => setDescription(data.description)}
                   className={`flex flex-col gap-2 w-full max-w-[220px] p-4 min-w-[200px] rounded-2xl duration-150 group
                         hover:bg-alice-white/10`}

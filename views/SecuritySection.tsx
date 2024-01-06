@@ -211,9 +211,8 @@ const SecuritySection = () => {
             <div className="flex justify-center items-center gap-4 last:mr-4">
               {marqueeComponent.map((item, index) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     <CustomWidthTooltip
-                      key={index}
                       title={item.hoverDescription}
                       className="transparent-tooltip"
                     >
@@ -229,7 +228,7 @@ const SecuritySection = () => {
                         </p>
                       </div>
                     </CustomWidthTooltip>
-                  </>
+                  </React.Fragment>
                 );
               })}
             </div>
