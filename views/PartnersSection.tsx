@@ -428,6 +428,87 @@ const technology = [
   },
 ];
 
+const web3partners = [
+  {
+    image: "/assets/partners/web-3-partners/image-4.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-2.jpg",
+  },
+
+  {
+    image: "/assets/partners/web-3-partners/image-5.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-6.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-7.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-8.jpg",
+  },
+
+  {
+    image: "/assets/partners/web-3-partners/image-10.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-11.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-12.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-13.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-14.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-15.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-16.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-17.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-18.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-19.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-20.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-21.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-22.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-23.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-25.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-24.jpg",
+  },
+
+  {
+    image: "/assets/partners/web-3-partners/image-9.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-1.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-3.jpg",
+  },
+];
+
 const Partners = () => {
   return (
     <div className="flex justify-center items-center" id="partners">
@@ -545,6 +626,32 @@ const Partners = () => {
                 })}
             </div>
           </Marquee>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 w-full grow max-w-[1200px]">
+          <h1
+            className={cn(
+              titilium.className,
+              "text-xl sm:text-[1.95313rem] text-alice-white/50 font-semibold"
+            )}
+          >
+            Web 3 Partners
+          </h1>
+          <div className="flex flex-wrap items-center justify-center gap-8 w-full">
+            {web3partners.map((data, index) => {
+              return (
+                <Image
+                  src={data.image}
+                  alt={data.image}
+                  height={140}
+                  width={140}
+                  unoptimized
+                  className=" grayscale duration-300 hover:grayscale-0 hover:scale-105 p-[2px] rounded-xl"
+                  key={index}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
