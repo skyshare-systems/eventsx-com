@@ -428,7 +428,7 @@ const technology = [
   },
 ];
 
-/* const web3partners = [
+const web3partners = [
   {
     image: "/assets/partners/web-3-partners/image-1.jpg",
   },
@@ -510,15 +510,85 @@ const technology = [
   {
     image: "/assets/partners/web-3-partners/image-26.JPG",
   },
-]; */
-
-const web3partners: { image: string }[] = [];
-
-for (let i = 1; i <= 52; i++) {
-  web3partners.push({
-    image: `/assets/partners/web-3-partners/image-${i}.jpg`,
-  });
-}
+  {
+    image: "/assets/partners/web-3-partners/image-27.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-28.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-29.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-30.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-31.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-32.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-33.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-34.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-35.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-36.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-37.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-38.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-39.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-40.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-41.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-42.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-43.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-44.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-45.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-46.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-47.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-48.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-49.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-50.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-51.JPG",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-52.JPG",
+  },
+];
 
 const Partners = () => {
   return (
