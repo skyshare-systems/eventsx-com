@@ -67,7 +67,7 @@ const FooterTwo = () => {
         asd
       </div>
 
-      <div className="flex justify-center items-center grow bg-alice-white">
+      <div className="flex justify-center items-center grow bg-[#ffffff]">
         <div className="flex flex-wrap justify-between gap-8 items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
           <div className="flex flex-col gap-4 ">
             <h1
@@ -94,26 +94,25 @@ const FooterTwo = () => {
             </div>
           </div>
 
-          {/* <div className="flex flex-col gap-1 justify-center items-center">
-            <h1
-              className={cn(
-                titilium.className,
-                "text-blue-black/50 text-base font-semibold"
-              )}
-            >
-              Startup accelerator programs
-            </h1>
-
+          <div className="flex flex-col gap-1 justify-center items-center">
             <div className="flex flex-wrap justify-center items-center">
-              {startupaccelerator.map((data, index) => {
-                return (
-                  <a href={data.linkUrl} key={index} target="_blank">
-                    <img src={data.image} alt={data.name} />;
-                  </a>
-                );
-              })}
+              <img
+                src={"/assets/partners/logo-evx.png"}
+                alt={"EventsX"}
+                width={303}
+                height={48}
+                className="ml-[4rem] sm:ml-4"
+              />
+
+              <img
+                src={"/assets/partners/crown-service.png"}
+                alt={"CrownService"}
+                width={303}
+                height={48}
+                className="mr-[8rem] sm:mr-4"
+              />
             </div>
-          </div> */}
+          </div>
 
           <div className="flex flex-wrap justify-center items-center gap-3">
             <a href="https://prighter.com/q/16998098797" target="_blank">

@@ -8,7 +8,6 @@ import SecuritySection from "@/views/SecuritySection";
 import Market from "@/components/market-section";
 import Advisors from "@/components/advisors-section";
 import Partners from "@/views/PartnersSection";
-import PartnersTwoSection from "@/views/PartnersTwoSection";
 import Footer from "@/views/Footer";
 import FooterTwo from "@/views/FooterTwo";
 import FooterThree from "@/views/FooterThree";
@@ -30,7 +29,7 @@ export default function Home() {
       <Team />
       <Advisors />
       <Partners />
-      <PartnersTwoSection />
+      {/* <PartnersTwoSection /> */}
       <Footer />
       <FooterTwo />
       <FooterThree />

@@ -435,9 +435,9 @@ const web3partners = [
   {
     image: "/assets/partners/web-3-partners/image-2.jpg",
   },
-  {
-    image: "/assets/partners/web-3-partners/image-3.jpg",
-  },
+  // {
+  //   image: "/assets/partners/web-3-partners/image-3.jpg",
+  // },
   {
     image: "/assets/partners/web-3-partners/image-4.jpg",
   },
@@ -546,9 +546,9 @@ const web3partners = [
   {
     image: "/assets/partners/web-3-partners/image-38.png",
   },
-  {
-    image: "/assets/partners/web-3-partners/image-39.jpg",
-  },
+  // {
+  //   image: "/assets/partners/web-3-partners/image-39.jpg",
+  // },
   {
     image: "/assets/partners/web-3-partners/image-40.png",
   },
@@ -570,12 +570,12 @@ const web3partners = [
   {
     image: "/assets/partners/web-3-partners/image-46.png",
   },
-  {
-    image: "/assets/partners/web-3-partners/image-47.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-48.jpg",
-  },
+  // {
+  //   image: "/assets/partners/web-3-partners/image-47.jpg",
+  // },
+  // {
+  //   image: "/assets/partners/web-3-partners/image-48.jpg",
+  // },
   {
     image: "/assets/partners/web-3-partners/image-49.jpg",
   },
