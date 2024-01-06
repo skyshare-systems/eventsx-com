@@ -117,46 +117,19 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center">
-          <a target="_blank" href="https://fjordfoundry.com/">
-            <Image
-              src={"/assets/buy-now.png"}
-              alt={"buy now"}
-              height={400}
-              width={400}
-              className="w-full max-w-[200px] hover:brightness-150 duration-150"
-            />
-            {/* <Image
-              src={"/assets/heart-anim.gif"}
-              alt={"heart"}
-              height={100}
-              width={100}
-              className="absolute top-1/2 left-[10%] transform -translate-x-[10%] -translate-y-1/2 hidden group-hover:block"
-            />
-            <Image
-              src={"/assets/heart-anim.gif"}
-              alt={"heart"}
-              height={100}
-              width={100}
-              className="absolute top-1/2 -right-[10%] transform  -translate-y-1/2 hidden group-hover:block"
-            /> */}
-            {/* Schedule a meeting */}
-          </a>
-          {/* <div className="relative">
-            <a
-              href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-              className={`py-3 px-4 rounded border duration-150 hover:brightness-125 border-alice-white/5 bg-blue-black  backdrop-blur-lg`}
-            >
-              Sign In
-            </a>
-            <a
-              href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-              className={`rotating text-transparent rounded-full border duration-150 hover:brightness-125 bg-gradient-to-t from-[#0182eb] via-[#34cc71] to-[#9f1ad2] blur-md -z-[1]`}
-            >
-              Sign In
-            </a>
-          </div> */}
-        </div>
+        <a
+          target="_blank"
+          href="https://fjordfoundry.com/"
+          className="w-full max-w-[240px]"
+        >
+          <Image
+            src={"/assets/buy-now.png"}
+            alt={"buy now"}
+            height={1000}
+            width={1000}
+            className="w-full  hover:brightness-150 duration-150"
+          />
+        </a>
 
         <div className="w-full relative">
           <img
