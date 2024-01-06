@@ -428,14 +428,19 @@ const technology = [
   },
 ];
 
-const web3partners = [
+/* const web3partners = [
   {
-    image: "/assets/partners/web-3-partners/image-4.jpg",
+    image: "/assets/partners/web-3-partners/image-1.jpg",
   },
   {
     image: "/assets/partners/web-3-partners/image-2.jpg",
   },
-
+  {
+    image: "/assets/partners/web-3-partners/image-3.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-4.jpg",
+  },
   {
     image: "/assets/partners/web-3-partners/image-5.jpg",
   },
@@ -448,7 +453,9 @@ const web3partners = [
   {
     image: "/assets/partners/web-3-partners/image-8.jpg",
   },
-
+  {
+    image: "/assets/partners/web-3-partners/image-9.jpg",
+  },
   {
     image: "/assets/partners/web-3-partners/image-10.jpg",
   },
@@ -497,17 +504,21 @@ const web3partners = [
   {
     image: "/assets/partners/web-3-partners/image-24.jpg",
   },
+  {
+    image: "/assets/partners/web-3-partners/image-25.jpg",
+  },
+  {
+    image: "/assets/partners/web-3-partners/image-26.JPG",
+  },
+]; */
 
-  {
-    image: "/assets/partners/web-3-partners/image-9.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-1.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-3.jpg",
-  },
-];
+const web3partners: { image: string }[] = [];
+
+for (let i = 1; i <= 52; i++) {
+  web3partners.push({
+    image: `/assets/partners/web-3-partners/image-${i}.jpg`,
+  });
+}
 
 const Partners = () => {
   return (
@@ -641,13 +652,13 @@ const Partners = () => {
             {web3partners.map((data, index) => {
               return (
                 <Image
+                  key={index}
                   src={data.image}
                   alt={data.image}
                   height={140}
                   width={140}
                   unoptimized
-                  className=" grayscale duration-300 hover:grayscale-0 hover:scale-105 p-[2px] rounded-xl"
-                  key={index}
+                  className="w-full h-auto max-w-[140px] aspect-square object-cover object-center	 grayscale duration-300 hover:grayscale-0 hover:scale-105 p-[2px] rounded-xl"
                 />
               );
             })}
