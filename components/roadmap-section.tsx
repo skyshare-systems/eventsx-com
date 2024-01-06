@@ -545,7 +545,7 @@ const Roadmap = () => {
               <CardRoadmap
                 title={
                   <>
-                    <span className="font-normal">BSC20 Network Launch </span>
+                    <span className="font-normal">BRC-20 Network Launch </span>
                   </>
                 }
                 color={"#008bfb"}

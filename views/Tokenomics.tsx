@@ -90,7 +90,7 @@ const tokenomics = [
   // seed sale
   {
     idanimate: "tokenomics_svg__seed-sale",
-    title: "LEP",
+    title: "LBP",
     color: "bg-[#187eff]",
     percentage: 17,
     description: (
@@ -102,7 +102,7 @@ const tokenomics = [
             "text-base font-normal text-alice-white/70"
           )}
         >
-          The LEP, constituting 17% of the tokenomics, represents the initial
+          The LBP, constituting 17% of the tokenomics, represents the initial
           phase of token distribution. During this stage, a limited supply of
           tokens is offered to early supporters and investors at a favorable
           price, enabling them to participate in the project's growth from its

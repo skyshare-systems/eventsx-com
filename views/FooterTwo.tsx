@@ -68,7 +68,7 @@ const FooterTwo = () => {
       </div>
 
       <div className="flex justify-center items-center grow bg-alice-white">
-        <div className="flex flex-wrap justify-center gap-8 items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
+        <div className="flex flex-wrap justify-between gap-8 items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
           <div className="flex flex-col gap-4 ">
             <h1
               className={cn(

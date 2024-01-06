@@ -5,7 +5,12 @@ import { cn } from "@/lib/utils";
 
 const startupaccelerator = [
   {
-    name: "aws",
+    name: "nvidia",
+    image: "/assets/nft-implementation/nvidia-v2.png",
+    // linkUrl: "https://aws.amazon.com/startups",
+  },
+  {
+    name: "startup",
     image: "/assets/nft-implementation/start-up-v2.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
@@ -14,29 +19,24 @@ const startupaccelerator = [
     image: "/assets/nft-implementation/aws-v2.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
-  {
-    name: "startup",
-    image: "/assets/nft-implementation/nvidia-v2.png",
-    // linkUrl: "https://aws.amazon.com/startups",
-  },
 ];
 
 const poweredby = [
-  {
-    name: "bitcoin",
-    image: "/assets/nft-implementation/bitcoin-v3.png",
-    // linkUrl: "https://www.nvidia.com/en-gb/startups/",
-  },
   {
     name: "bnb",
     image: "/assets/nft-implementation/bnb-v3.png",
     // linkUrl: "https://aws.amazon.com/startups",
   },
+  {
+    name: "bitcoin",
+    image: "/assets/nft-implementation/bitcoin-v3.png",
+    // linkUrl: "https://www.nvidia.com/en-gb/startups/",
+  },
 ];
 
 const StartUpAcc = () => {
   return (
-    <div className="flex justify-center items-center py-2 mt-2 mb-32 relative">
+    <div className="flex justify-center items-center py-2 mt-2 mb-8 relative">
       <div className="flex flex-col justify-center gap-8 items-center py-8 px-4 xl:px-0 grow max-w-[90rem]">
         <div className="flex flex-col gap-4 justify-center items-center">
           <h1
@@ -83,6 +83,29 @@ const StartUpAcc = () => {
               );
             })}
           </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center gap-2">
+          <h1
+            className={cn(
+              titilium.className,
+              "text-alice-white text-2xl sm:text-3xl font-semibold text-center"
+            )}
+          >
+            Transforming Event Participation into Bitcoin Rewards
+          </h1>
+
+          <p
+            className={cn(
+              titilium.className,
+              "text-alice-white/50 text-base font-normal text-center max-w-[700px]"
+            )}
+          >
+            Participate actively, earn Bitcoin, and unlock possibilities –
+            EventsX pioneers a revolutionary event experience with its
+            innovative "Participate2Earn" protocol and multi-chain system
+            architecture.
+          </p>
         </div>
       </div>
     </div>

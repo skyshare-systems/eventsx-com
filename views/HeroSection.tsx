@@ -112,17 +112,20 @@ const HeroSection = () => {
               "text-base font-normal text-alice-white/70 text-center"
             )}
           >
-            Explore the opportunity to invest in the LBP funding round.
+            Explore the opportunity to invest in the LBP funding round at Fjord
+            Foundry.
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
-          <a
-            target="_blank"
-            href="https://fjordfoundry.com/"
-            className="py-3 px-6 flex items-center gap-2 hover:brightness-110 duration-150 font-semibold text-2xl bg-sky-500 bg-opacity-5 rounded-[499.50px] shadow border border-sky-500 backdrop-blur-sm justify-center"
-          >
-            Invest
+        <div className="flex flex-wrap items-center">
+          <a target="_blank" href="https://fjordfoundry.com/">
+            <Image
+              src={"/assets/buy-now.png"}
+              alt={"buy now"}
+              height={400}
+              width={400}
+              className="w-full max-w-[200px] hover:brightness-150 duration-150"
+            />
             {/* <Image
               src={"/assets/heart-anim.gif"}
               alt={"heart"}
