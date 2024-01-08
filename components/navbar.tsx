@@ -166,6 +166,26 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
               {item.title}
             </LinkS>
           ))}
+          <a
+            href="/whitepaper.pdf"
+            download
+            className={cn(
+              titilium.className,
+              "hover:text-white duration-200 cursor-pointer p-4 py-3 text-alice-white/50"
+            )}
+          >
+            Whitepaper
+          </a>
+          <a
+            href="/audit-report.pdf"
+            download
+            className={cn(
+              titilium.className,
+              "hover:text-white duration-200 cursor-pointer p-4 py-3 text-alice-white/50"
+            )}
+          >
+            Audit Report
+          </a>
         </div>
 
         <hr className="border border-b-[#F3F7FA]/10" />
