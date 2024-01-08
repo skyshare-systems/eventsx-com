@@ -120,7 +120,7 @@ const HeroSection = () => {
         <div>
           <a
             target="_blank"
-            href="https://fjordfoundry.com/"
+            href="https://fjordfoundry.com/pools/bsc/0xC5C7A585eD74aBD91e1e11Ad29d6DfC37Bd826AE"
             className="bg-white pl-1 py-1 pr-8 flex flex-row gap-3 rounded-full items-center text-black"
           >
             <Image
