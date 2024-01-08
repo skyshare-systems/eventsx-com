@@ -10,6 +10,7 @@ import { Icons } from "@/components/icons";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
+import Dropdown from "@/public/icons/dropdown.svg";
 import { Link as LinkS } from "react-scroll";
 /* import { Button, buttonVariants } from './ui/button';
  */ import { titilium } from "@/public/fonts";
@@ -77,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                   activeClass="active"
                   className={cn(
                     titilium.className,
-                    "hover:text-white duration-200 cursor-pointer p-4 py-3 text-alice-white/50"
+                    "hover:text-white duration-200 cursor-pointer text-xs 2xl:text-base p-2 py-3 text-alice-white/50"
                   )}
                 >
                   {item.title}
@@ -87,14 +88,14 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                 <h1
                   className={cn(
                     titilium.className,
-                    "hover:text-white duration-200 cursor-pointer p-4 py-3 text-alice-white/50"
+                    "hover:text-white duration-200 cursor-pointer text-xs 2xl:text-base p-4 py-3 text-alice-white/50 flex gap-2 items-center"
                   )}
                 >
-                  Resources
+                  Resources <Dropdown />
                 </h1>
               </div>
               {showResources && (
-                <div className="absolute top-[70%] bg-blue-black right-0 rounded-b-xl flex flex-col p-4">
+                <div className="absolute top-[80%] bg-blue-black right-0 rounded-b-xl flex flex-col p-4">
                   <a
                     href="/whitepaper.pdf"
                     download
