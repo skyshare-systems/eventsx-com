@@ -22,6 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
   const [scrolling, setScrolling] = useState(false);
   const [sideBar, setSideBar] = useState(false);
   const router = useRouter();
+  const [showResources, setShowResources] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       <header
         className={cn(
           "fixed top-0 p-4 z-[99999999] transition-all duration-200 w-full",
-          scrolling ? "bg-blue-black" : "bg-transparent"
+          scrolling ? "bg-blue-black" : "bg-blue-black"
         )}
       >
         <nav className="flex items-center justify-center py-2 w-full">
@@ -64,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                 className="pointer-events-none"
               />
             </a>
-            <ul className="hidden  xl:flex items-center gap-1 flex-wrap">
+            <ul className="hidden  xl:flex items-center gap-1 flex-wrap relative">
               {items.map((item) => (
                 <LinkS
                   key={item.href}
@@ -82,32 +83,54 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                   {item.title}
                 </LinkS>
               ))}
+              <div onClick={() => setShowResources(!showResources)}>
+                <h1
+                  className={cn(
+                    titilium.className,
+                    "hover:text-white duration-200 cursor-pointer p-4 py-3 text-alice-white/50"
+                  )}
+                >
+                  Resources
+                </h1>
+              </div>
+              {showResources && (
+                <div className="absolute top-[70%] bg-blue-black right-0 rounded-b-xl flex flex-col p-4">
+                  <a
+                    href="/whitepaper.pdf"
+                    download
+                    className={cn(
+                      titilium.className,
+                      "hover:text-white duration-200 cursor-pointer p-4 py-3 text-alice-white/50"
+                    )}
+                  >
+                    Whitepaper
+                  </a>
+                  <a
+                    href="/audit-report.pdf"
+                    download
+                    className={cn(
+                      titilium.className,
+                      "hover:text-white duration-200 cursor-pointer p-4 py-3 text-alice-white/50"
+                    )}
+                  >
+                    Audit Report
+                  </a>
+                </div>
+              )}
             </ul>
           </div>
 
           <div className=" flex-wrap items-center gap-8 hidden xl:flex">
             <button
-              className="py-3 px-4 bg-[#0182eb] rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
+              className="py-3 px-4 bg-[#0182eb] rounded-full flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
               onClick={() =>
-                router.push("https://www.eventsx.com/request-a-demo")
+                router.push(
+                  "https://fjordfoundry.com/pools/bsc/0xC5C7A585eD74aBD91e1e11Ad29d6DfC37Bd826AE"
+                )
               }
             >
-              Request Demo <Icons.arrow width={17} height={17} />
+              Invest Now <Icons.arrow width={17} height={17} />
             </button>
-            <div className="relative">
-              <a
-                href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-                className={`py-3 px-4 rounded border duration-150 hover:brightness-125 border-alice-white/5 bg-blue-black backdrop-blur-lg`}
-              >
-                Sign In
-              </a>
-              <a
-                href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-                className={`rotating text-transparent rounded-full border duration-150 hover:brightness-125 bg-gradient-to-t from-[#0182eb] via-[#34cc71] to-[#9f1ad2] blur-md -z-[1]`}
-              >
-                Sign In
-              </a>
-            </div>
           </div>
 
           <button
@@ -149,19 +172,15 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 
         <div className="flex flex-wrap justify-start items-center w-full gap-4">
           <button
-            className="py-3 px-4 bg-[#0182eb] rounded flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
+            className="py-3 px-4 bg-[#0182eb] rounded-full flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
             onClick={() =>
-              router.push("https://www.eventsx.com/request-a-demo")
+              router.push(
+                "https://fjordfoundry.com/pools/bsc/0xC5C7A585eD74aBD91e1e11Ad29d6DfC37Bd826AE"
+              )
             }
           >
-            Request Demo <Icons.arrow width={17} height={17} />
+            Invest Now <Icons.arrow width={17} height={17} />
           </button>
-          <a
-            href="https://auth.eventsx.com/?fbclid=IwAR0z5LswPH1XOBK7EVZ7aRGC46XeQr3hOJfVgzHLt-jr8NqiaaZc_B7FI0Y"
-            className={`py-3 px-4 rounded border duration-150 hover:brightness-125 bg-gradient-to-r from-[#0182eb] to-[#9f1ad2]  backdrop-blur-lg`}
-          >
-            Sign In
-          </a>
         </div>
       </div>
     </>

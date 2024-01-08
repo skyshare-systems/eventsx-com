@@ -117,19 +117,29 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <a
-          target="_blank"
-          href="https://fjordfoundry.com/"
-          className="w-full max-w-[240px]"
-        >
-          <Image
-            src={"/assets/buy-now.png"}
-            alt={"buy now"}
-            height={1000}
-            width={1000}
-            className="w-full  hover:brightness-150 duration-150"
-          />
-        </a>
+        <div>
+          <a
+            target="_blank"
+            href="https://fjordfoundry.com/"
+            className="bg-white pl-1 py-1 pr-8 flex flex-row gap-3 rounded-full items-center text-black"
+          >
+            <Image
+              src={"/icons/fjord-icon.png"}
+              alt={"buy now"}
+              height={56}
+              width={56}
+              className="hover:brightness-150 duration-150"
+            />
+            <span
+              className={cn(
+                outfit.className,
+                "text-[20px] font-bold text-center uppercase"
+              )}
+            >
+              Buy Now
+            </span>
+          </a>
+        </div>
 
         <div className="w-full relative">
           <img
