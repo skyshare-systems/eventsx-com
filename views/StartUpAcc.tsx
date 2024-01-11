@@ -82,7 +82,11 @@ const StartUpAcc = () => {
                   key={index}
                   src={data.image}
                   alt={data.name}
-                  className="brightness-0 invert hover:brightness-100 hover:invert-0 hover:bg-white p-2 rounded-lg duration-300"
+                  className={`${
+                    data.name === "eth"
+                      ? "hover:scale-105"
+                      : "brightness-0 invert hover:brightness-100 hover:invert-0 hover:bg-white "
+                  } duration-300 p-2 rounded-lg`}
                 />
               );
             })}
