@@ -68,12 +68,21 @@ const HeroSection = () => {
         />
 
         <Image
+          src={"/icons/eth-icon.png"}
+          alt={"eth"}
+          height={500}
+          width={500}
+          unoptimized
+          className="absolute top-[20%] right-[0%] transform -translate-y-[22%] w-full max-w-[250px] z-[2] hidden lg:block"
+        />
+
+        <Image
           src={"/icons/bnb-icon.png"}
           alt={"bitcoin"}
           height={500}
           width={500}
           unoptimized
-          className="absolute top-[35%] right-[5%] transform -translate-y-[22%] w-full max-w-[250px] z-[2] hidden lg:block"
+          className="absolute top-[40%] right-[15%] transform -translate-y-[22%] w-full max-w-[130px] z-[2] hidden lg:block"
         />
         <div className="flex flex-col gap-4 grow max-w-[712px] px-4 xl:px-0 relative z-[3]">
           <h1

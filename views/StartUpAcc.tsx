@@ -28,6 +28,10 @@ const poweredby = [
     // linkUrl: "https://aws.amazon.com/startups",
   },
   {
+    name: "eth",
+    image: "/assets/nft-implementation/eth.png",
+  },
+  {
     name: "bitcoin",
     image: "/assets/nft-implementation/bitcoin-v3.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
