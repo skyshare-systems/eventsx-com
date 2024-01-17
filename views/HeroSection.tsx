@@ -129,16 +129,16 @@ const HeroSection = () => {
         <div>
           <a
             target="_blank"
-            href="https://fjordfoundry.com/pools/bsc/0xC5C7A585eD74aBD91e1e11Ad29d6DfC37Bd826AE"
-            className="bg-white pl-1 py-1 pr-8 flex flex-row gap-3 rounded-full items-center text-black"
+            href="https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0x17729f7ffddd4ed480cf4cfb1668ef90d1e6a24e"
+            className="bg-white py-2 px-4 flex flex-row gap-3 rounded-full items-center text-black"
           >
-            <Image
+            {/* <Image
               src={"/icons/fjord-icon.png"}
               alt={"buy now"}
               height={56}
               width={56}
               className="hover:brightness-150 duration-150"
-            />
+            /> */}
             <span
               className={cn(
                 outfit.className,

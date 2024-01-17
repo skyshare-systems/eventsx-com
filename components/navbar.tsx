@@ -126,7 +126,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
               className="py-3 px-4 bg-[#0182eb] rounded-full flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
               onClick={() =>
                 router.push(
-                  "https://fjordfoundry.com/pools/bsc/0xC5C7A585eD74aBD91e1e11Ad29d6DfC37Bd826AE"
+                  "https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0x17729f7ffddd4ed480cf4cfb1668ef90d1e6a24e"
                 )
               }
             >
@@ -196,7 +196,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
             className="py-3 px-4 bg-[#0182eb] rounded-full flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
             onClick={() =>
               router.push(
-                "https://fjordfoundry.com/pools/bsc/0xC5C7A585eD74aBD91e1e11Ad29d6DfC37Bd826AE"
+                "https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0x17729f7ffddd4ed480cf4cfb1668ef90d1e6a24e"
               )
             }
           >
