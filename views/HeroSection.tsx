@@ -130,15 +130,15 @@ const HeroSection = () => {
           <a
             target="_blank"
             href="https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0x17729f7ffddd4ed480cf4cfb1668ef90d1e6a24e"
-            className="bg-white py-2 px-4 flex flex-row gap-3 rounded-full items-center text-black"
+            className="bg-white py-2 px-6 flex flex-row gap-1 rounded-full items-center text-black"
           >
-            {/* <Image
-              src={"/icons/fjord-icon.png"}
+            <Image
+              src={"/icons/Uniswap_Logo.svg"}
               alt={"buy now"}
               height={56}
               width={56}
               className="hover:brightness-150 duration-150"
-            /> */}
+            />
             <span
               className={cn(
                 outfit.className,
