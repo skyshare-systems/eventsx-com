@@ -36,6 +36,11 @@ const poweredby = [
     image: "/assets/nft-implementation/bitcoin-v3.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
+  {
+    name: "coingecko",
+    image: "/assets/nft-implementation/coingecko.webp",
+    // linkUrl: "https://www.nvidia.com/en-gb/startups/",
+  },
 ];
 
 const StartUpAcc = () => {
@@ -82,11 +87,19 @@ const StartUpAcc = () => {
                   key={index}
                   src={data.image}
                   alt={data.name}
-                  className={`${
+                  className={`
+                  ${
+                    data.name === "coingecko" &&
+                    "hover:scale-105 max-w-[200px] hover:bg-white brightness-100 inset"
+                  } 
+                  
+                  ${
                     data.name === "eth"
-                      ? "hover:scale-105"
-                      : "brightness-0 invert hover:brightness-100 hover:invert-0 hover:bg-white "
-                  } duration-300 p-2 rounded-lg`}
+                      ? "hover:scale-105 max-w-[200px]"
+                      : "brightness-0 invert hover:brightness-100 hover:invert-0 hover:bg-white"
+                  } 
+                  
+                  duration-300 p-2 rounded-lg`}
                 />
               );
             })}
