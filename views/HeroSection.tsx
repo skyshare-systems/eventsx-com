@@ -121,8 +121,7 @@ const HeroSection = () => {
               "text-base font-normal text-alice-white/70 text-center"
             )}
           >
-            Explore the opportunity to invest in the LBP funding round at Fjord
-            Foundry.
+            Explore the opportunity to invest in EVEX
           </p>
         </div>
 

@@ -36,11 +36,11 @@ const poweredby = [
     image: "/assets/nft-implementation/bitcoin-v3.png",
     // linkUrl: "https://www.nvidia.com/en-gb/startups/",
   },
-  {
-    name: "coingecko",
-    image: "/assets/nft-implementation/coingecko.webp",
-    // linkUrl: "https://www.nvidia.com/en-gb/startups/",
-  },
+  // {
+  //   name: "coingecko",
+  //   image: "/assets/nft-implementation/coingecko.webp",
+  //   // linkUrl: "https://www.nvidia.com/en-gb/startups/",
+  // },
 ];
 
 const StartUpAcc = () => {
@@ -103,6 +103,16 @@ const StartUpAcc = () => {
                 />
               );
             })}
+            <a
+              href="https://www.geckoterminal.com/eth/pools/0x3470013ee77628604d375c3653df1d8c717e9d89?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
+              target="_blank"
+            >
+              <img
+                src={"/assets/nft-implementation/coingecko.webp"}
+                alt={"coingecko"}
+                className={`hover:scale-105 max-w-[200px] hover:bg-white brightness-100 inset duration-300 p-2 rounded-lg`}
+              />
+            </a>
           </div>
         </div>
 

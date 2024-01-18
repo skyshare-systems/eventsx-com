@@ -121,16 +121,21 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
             </ul>
           </div>
 
-          <div className=" flex-wrap items-center gap-8 hidden xl:flex">
+          <div className="flex-wrap items-center gap-8 hidden xl:flex">
             <button
-              className="py-3 px-4 bg-[#0182eb] rounded-full flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
+              className="py-3 px-4 bg-[#0182eb] rounded-md flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
               onClick={() =>
-                router.push(
-                  "https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0x17729f7ffddd4ed480cf4cfb1668ef90d1e6a24e"
-                )
+                router.push("https://www.eventsx.com/request-a-demo")
               }
             >
-              Invest Now <Icons.arrow width={17} height={17} />
+              Request Demo <Icons.arrow width={17} height={17} />
+            </button>
+            <button
+              className="py-3 px-4 bg-[#0182eb] rounded-md flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
+              onClick={() => router.push("https://auth.eventsx.com/")}
+            >
+              Sign In
+              {/* <Icons.arrow width={17} height={17} /> */}
             </button>
           </div>
 
@@ -195,12 +200,17 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
           <button
             className="py-3 px-4 bg-[#0182eb] rounded-full flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
             onClick={() =>
-              router.push(
-                "https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0x17729f7ffddd4ed480cf4cfb1668ef90d1e6a24e"
-              )
+              router.push("https://www.eventsx.com/request-a-demo")
             }
           >
-            Invest Now <Icons.arrow width={17} height={17} />
+            Request Demo <Icons.arrow width={17} height={17} />
+          </button>
+          <button
+            className="py-3 px-4 bg-[#0182eb] rounded-md flex items-center gap-2 hover:brightness-110 duration-150 font-semibold"
+            onClick={() => router.push("https://auth.eventsx.com/")}
+          >
+            Sign In
+            {/* <Icons.arrow width={17} height={17} /> */}
           </button>
         </div>
       </div>
