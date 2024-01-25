@@ -430,163 +430,111 @@ const technology = [
 
 const web3partners = [
   {
-    image: "/assets/partners/web-3-partners/image-1.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-01.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-2.jpg",
-  },
-  // {
-  //   image: "/assets/partners/web-3-partners/image-3.jpg",
-  // },
-  {
-    image: "/assets/partners/web-3-partners/image-4.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-02.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-5.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-03.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-6.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-04.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-7.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-05.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-8.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-06.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-9.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-07.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-10.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-08.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-11.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-09.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-12.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-10.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-13.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-11.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-14.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-12.png",
+    direction: "left",
   },
   {
-    image: "/assets/partners/web-3-partners/image-15.jpg",
+    image: "/assets/partners/web-3-partners/batch-1/web3-partner-13.png",
+    direction: "left",
+  },
+];
+
+const web3partnersbatch2 = [
+  {
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-15.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-16.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-16.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-17.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-17.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-18.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-18.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-19.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-19.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-20.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-20.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-21.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-21.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-22.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-22.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-23.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-23.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-25.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-24.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-24.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-25.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-25.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-17.png",
+    direction: "right",
   },
   {
-    image: "/assets/partners/web-3-partners/image-26.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-27.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-28.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-29.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-30.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-31.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-32.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-33.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-34.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-35.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-36.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-37.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-38.png",
-  },
-  // {
-  //   image: "/assets/partners/web-3-partners/image-39.jpg",
-  // },
-  {
-    image: "/assets/partners/web-3-partners/image-40.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-41.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-42.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-43.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-44.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-45.png",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-46.png",
-  },
-  // {
-  //   image: "/assets/partners/web-3-partners/image-47.jpg",
-  // },
-  // {
-  //   image: "/assets/partners/web-3-partners/image-48.jpg",
-  // },
-  {
-    image: "/assets/partners/web-3-partners/image-49.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-50.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-51.jpg",
-  },
-  {
-    image: "/assets/partners/web-3-partners/image-52.jpg",
+    image: "/assets/partners/web-3-partners/batch-2/web3-partner-18.png",
+    direction: "right",
   },
 ];
 
@@ -709,7 +657,7 @@ const Partners = () => {
           </Marquee>
         </div>
 
-        <div className="flex flex-col items-center gap-8 w-full grow max-w-[1200px]">
+        <div className="flex flex-col items-center gap-8 w-full grow">
           <h1
             className={cn(
               titilium.className,
@@ -718,21 +666,39 @@ const Partners = () => {
           >
             Web 3 Partners
           </h1>
-          <div className="flex flex-wrap items-center justify-center gap-8 w-full">
-            {web3partners.map((data, index) => {
-              return (
-                <Image
-                  key={index}
-                  src={data.image}
-                  alt={data.image}
-                  height={140}
-                  width={140}
-                  unoptimized
-                  className="w-full h-auto max-w-[140px] aspect-square object-cover object-center	 grayscale duration-300 hover:grayscale-0 hover:scale-105 p-[2px] rounded-xl"
-                />
-              );
-            })}
-          </div>
+          <Marquee pauseOnHover direction="left">
+            <div className="flex flex-wrap items-center gap-8 w-full last:mr-4">
+              {web3partners.map((data, index) => {
+                return (
+                  <img
+                    src={data.image}
+                    alt={data.image}
+                    height={140}
+                    width={140}
+                    className="grayscale duration-300 hover:grayscale-0 p-[2px] rounded-xl hover:bg-white"
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+          </Marquee>
+
+          <Marquee pauseOnHover direction="right">
+            <div className="flex flex-wrap items-center gap-8 w-full last:mr-4">
+              {web3partnersbatch2.map((data, index) => {
+                return (
+                  <img
+                    src={data.image}
+                    alt={data.image}
+                    height={140}
+                    width={140}
+                    className="grayscale duration-300 hover:grayscale-0 p-[2px] rounded-xl hover:bg-white"
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+          </Marquee>
         </div>
       </div>
     </div>
